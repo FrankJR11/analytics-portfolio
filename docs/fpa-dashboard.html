@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FP&amp;A / Cost &amp; Budget Dashboard — Live</title>
+<meta name="description" content="Interactive FP&A dashboard: budget vs actual variance, a capex project tracker, cost center drill-through, and a governed KPI register." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230E6B5C'/><text x='16' y='21' font-family='monospace' font-size='11' fill='white' text-anchor='middle'>FPA</text></svg>" />
+</head>
+<body class="dash-body">
+
+<div class="dash-top">
+  <div class="wrap">
+    <div class="row1">
+      <div class="dash-title">
+        <a href="index.html" class="mono" style="font-size:12px; color:var(--muted);">← Portfolio</a>
+        <h1>FP&amp;A · cost &amp; budget dashboard</h1>
+        <span class="asof" id="asOf">as of —</span>
+      </div>
+      <div class="dash-actions">
+        <a class="btn btn-ghost" style="padding:7px 12px; font-size:13px;" href="dashboard.html">O2C ↗</a>
+        <a class="btn btn-ghost" style="padding:7px 12px; font-size:13px;" href="scm-dashboard.html">Supply Chain ↗</a>
+        <a class="btn btn-ghost" style="padding:7px 12px; font-size:13px;" href="hr-dashboard.html">Workforce ↗</a>
+      </div>
+    </div>
+
+    <div class="filters" role="group" aria-label="Dashboard filters">
+      <label>Region
+        <select id="fRegion"><option value="All">All</option></select>
+      </label>
+      <label>Cost Center
+        <select id="fCC"><option value="All">All</option></select>
+      </label>
+      <label>Year
+        <select id="fYear"><option value="All">All</option></select>
+      </label>
+      <button class="reset" id="fReset" type="button">✕ reset</button>
+      <span class="small" id="filterEcho" style="margin-left:auto;"></span>
+    </div>
+
+    <nav class="tabs" role="tablist" aria-label="Dashboard pages">
+      <button class="tab-btn active" data-tab="p1" role="tab" aria-selected="true"><span class="idx">1</span>Executive summary</button>
+      <button class="tab-btn" data-tab="p2" role="tab" aria-selected="false"><span class="idx">2</span>Cost &amp; variance</button>
+      <button class="tab-btn" data-tab="p3" role="tab" aria-selected="false"><span class="idx">3</span>Capex &amp; projects</button>
+      <button class="tab-btn" data-tab="p4" role="tab" aria-selected="false"><span class="idx">4</span>Cost center 360</button>
+      <button class="tab-btn" data-tab="p5" role="tab" aria-selected="false"><span class="idx">5</span>KPI governance</button>
+    </nav>
+  </div>
+</div>
+
+<main class="dash-main">
+  <div class="wrap">
+
+    <!-- ====================== PAGE 1 · EXECUTIVE SUMMARY ====================== -->
+    <section class="tab-page active" id="p1" role="tabpanel">
+      <div class="insight-banner" id="p1Banner"></div>
+      <div class="kpi-row" id="p1Kpis"></div>
+
+      <div class="panel-grid wide-left">
+        <div class="panel">
+          <p class="p-title">Budget vs actual <span class="hint" id="p1TrendHint"></span></p>
+          <div class="chart-box" style="height:240px;"><canvas id="chTrend"></canvas></div>
+        </div>
+        <div class="panel">
+          <p class="p-title">Regional performance <span class="hint">heat = distance from target</span></p>
+          <div id="p1Heatmap"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <p class="p-title">Variance by cost center <span class="hint" id="p1CCHint"></span></p>
+        <div id="p1CCBars"></div>
+      </div>
+    </section>
+
+    <!-- ====================== PAGE 2 · COST & VARIANCE ====================== -->
+    <section class="tab-page" id="p2" role="tabpanel">
+      <div class="insight-banner" id="p2Banner"></div>
+
+      <div class="panel" style="margin-bottom:12px;">
+        <p class="p-title">Budget bridge <span class="hint" id="p2BridgeHint">top variance drivers, budget → actual</span></p>
+        <div id="p2Bridge"></div>
+      </div>
+
+      <div class="panel-grid">
+        <div class="panel">
+          <p class="p-title">Variance by account <span class="hint" id="p2AcctHint"></span></p>
+          <div id="p2AcctBars"></div>
+        </div>
+        <div class="panel">
+          <p class="p-title">Sites ranked by labor variance <span class="hint">Overtime + Contractor + Recruiting</span></p>
+          <div id="p2Sites"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <p class="p-title">Cost centers ranked by variance <span class="hint" id="p2TableHint"></span></p>
+        <div id="p2Table"></div>
+      </div>
+    </section>
+
+    <!-- ====================== PAGE 3 · CAPEX & PROJECTS ======================= -->
+    <section class="tab-page" id="p3" role="tabpanel">
+      <div class="insight-banner" id="p3Banner"></div>
+      <div class="kpi-row" id="p3Kpis"></div>
+
+      <div class="panel-grid wide-left">
+        <div class="panel">
+          <p class="p-title">Approved vs spent by category <span class="hint">completed + delayed projects</span></p>
+          <div class="chart-box" style="height:240px;"><canvas id="chCapexBar"></canvas></div>
+        </div>
+        <div class="panel">
+          <p class="p-title">Project status <span class="hint" id="p3DonutHint"></span></p>
+          <div style="display:flex; align-items:center; gap:18px;">
+            <div class="chart-box" style="width:170px; height:170px; flex:0 0 auto;"><canvas id="chDonut"></canvas></div>
+            <div id="p3DonutLegend" style="flex:1;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-grid">
+        <div class="panel">
+          <p class="p-title">On-time completion by category <span class="hint">within 30 days of plan</span></p>
+          <div id="p3CatBars"></div>
+        </div>
+        <div class="panel">
+          <p class="p-title">Projects furthest behind schedule <span class="hint" id="p3TableHint"></span></p>
+          <div id="p3Table"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== PAGE 4 · COST CENTER 360 ========================= -->
+    <section class="tab-page" id="p4" role="tabpanel">
+      <div class="cust-picker">
+        <input type="text" id="ccSearch" list="ccList" placeholder="Search 60 cost center × site combinations…" aria-label="Search cost centers" />
+        <datalist id="ccList"></datalist>
+        <span class="quick">try:
+          <button type="button" id="qWorstVariance">worst variance</button> ·
+          <button type="button" id="qBiggestBudget">biggest budget</button> ·
+          <button type="button" id="qBestVariance">best variance</button>
+        </span>
+      </div>
+
+      <div id="p4Body"></div>
+      <p class="small" style="margin-top:10px;">Cost Center 360 is an all-time snapshot (2023–2025) — the global region/cost-center/year filters don't apply here.</p>
+    </section>
+
+    <!-- ====================== PAGE 5 · KPI GOVERNANCE ========================= -->
+    <section class="tab-page" id="p5" role="tabpanel">
+      <div class="insight-banner tone-info" id="p5Banner"></div>
+      <div class="kpi-row" id="p5Cards"></div>
+      <div class="panel">
+        <p class="p-title">KPI definitions register <span class="hint">single source of truth · computed live from the dataset</span></p>
+        <div style="overflow-x:auto;">
+          <table class="dtable" id="p5Table"></table>
+        </div>
+        <p class="gov-note">Current values are computed across the full dataset (filters don't apply on this page). Capex utilization and
+        on-time rate are scoped to completed/delayed projects only, so freshly-started projects don't distort the figure. Every
+        value here is produced by <span class="mono">pipeline/build_fpa_dashboard_data.py</span>.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="dash-footer">
+  <div class="wrap">
+    <span>Methodology: variance = (actual − budget) ÷ budget · capex utilization = spend to date ÷ approved budget, completed + delayed projects only · on-time = within 30 days of planned completion.</span>
+    <span>Synthetic dataset · <span id="footGen"></span></span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="assets/fpa-data.js"></script>
+<script src="assets/fpa-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Workforce &amp; Safety Dashboard — Live</title>
+<meta name="description" content="Interactive workforce analytics dashboard: attrition and safety, hiring funnel, manager 360 drill-through, and a governed KPI register." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230E6B5C'/><text x='16' y='21' font-family='monospace' font-size='12' fill='white' text-anchor='middle'>HR</text></svg>" />
+</head>
+<body class="dash-body">
+
+<div class="dash-top">
+  <div class="wrap">
+    <div class="row1">
+      <div class="dash-title">
+        <a href="index.html" class="mono" style="font-size:12px; color:var(--muted);">← Portfolio</a>
+        <h1>Workforce &amp; safety dashboard</h1>
+        <span class="asof" id="asOf">as of —</span>
+      </div>
+      <div class="dash-actions">
+        <a class="btn btn-ghost" style="padding:7px 12px; font-size:13px;" href="dashboard.html">O2C ↗</a>
+        <a class="btn btn-ghost" style="padding:7px 12px; font-size:13px;" href="scm-dashboard.html">Supply Chain ↗</a>
+        <a class="btn btn-ghost" style="padding:7px 12px; font-size:13px;" href="fpa-dashboard.html">FP&amp;A ↗</a>
+      </div>
+    </div>
+
+    <div class="filters" role="group" aria-label="Dashboard filters">
+      <label>Region
+        <select id="fRegion"><option value="All">All</option></select>
+      </label>
+      <label>Department
+        <select id="fDept"><option value="All">All</option></select>
+      </label>
+      <label>Year
+        <select id="fYear"><option value="All">All</option></select>
+      </label>
+      <button class="reset" id="fReset" type="button">✕ reset</button>
+      <span class="small" id="filterEcho" style="margin-left:auto;"></span>
+    </div>
+
+    <nav class="tabs" role="tablist" aria-label="Dashboard pages">
+      <button class="tab-btn active" data-tab="p1" role="tab" aria-selected="true"><span class="idx">1</span>Executive summary</button>
+      <button class="tab-btn" data-tab="p2" role="tab" aria-selected="false"><span class="idx">2</span>Hiring &amp; attrition</button>
+      <button class="tab-btn" data-tab="p3" role="tab" aria-selected="false"><span class="idx">3</span>Safety &amp; wellbeing</button>
+      <button class="tab-btn" data-tab="p4" role="tab" aria-selected="false"><span class="idx">4</span>Manager 360</button>
+      <button class="tab-btn" data-tab="p5" role="tab" aria-selected="false"><span class="idx">5</span>KPI governance</button>
+    </nav>
+  </div>
+</div>
+
+<main class="dash-main">
+  <div class="wrap">
+
+    <!-- ====================== PAGE 1 · EXECUTIVE SUMMARY ====================== -->
+    <section class="tab-page active" id="p1" role="tabpanel">
+      <div class="insight-banner" id="p1Banner"></div>
+      <div class="kpi-row" id="p1Kpis"></div>
+
+      <div class="panel-grid wide-left">
+        <div class="panel">
+          <p class="p-title">Headcount trend <span class="hint" id="p1TrendHint"></span></p>
+          <div class="chart-box" style="height:240px;"><canvas id="chTrend"></canvas></div>
+        </div>
+        <div class="panel">
+          <p class="p-title">Regional performance <span class="hint">heat = distance from target</span></p>
+          <div id="p1Heatmap"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <p class="p-title">Attrition rate by department <span class="hint" id="p1DeptHint"></span></p>
+        <div id="p1DeptBars"></div>
+      </div>
+    </section>
+
+    <!-- ====================== PAGE 2 · HIRING & ATTRITION ====================== -->
+    <section class="tab-page" id="p2" role="tabpanel">
+      <div class="insight-banner" id="p2Banner"></div>
+
+      <div class="panel" style="margin-bottom:12px;">
+        <p class="p-title">Headcount bridge <span class="hint" id="p2BridgeHint"></span></p>
+        <div id="p2Bridge"></div>
+      </div>
+
+      <div class="panel-grid">
+        <div class="panel">
+          <p class="p-title">First-year attrition by department <span class="hint">2023–24 hires · region filter applies · year filter n/a</span></p>
+          <div id="p2Cohort"></div>
+        </div>
+        <div class="panel">
+          <p class="p-title">Time to fill <span class="hint">monthly avg · target ≤ 30 days</span></p>
+          <div class="chart-box" style="height:210px;"><canvas id="chTtf"></canvas></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <p class="p-title">Departments ranked by attrition <span class="hint" id="p2TableHint"></span></p>
+        <div id="p2Table"></div>
+      </div>
+    </section>
+
+    <!-- ====================== PAGE 3 · SAFETY & WELLBEING ====================== -->
+    <section class="tab-page" id="p3" role="tabpanel">
+      <div class="insight-banner" id="p3Banner"></div>
+      <div class="kpi-row" id="p3Kpis"></div>
+
+      <div class="panel-grid wide-left">
+        <div class="panel">
+          <p class="p-title">Recordable incident rate (TRIR) trend <span class="hint" id="p3TrirHint">region &amp; department filters apply · target ≤ 3.0</span></p>
+          <div class="chart-box" style="height:240px;"><canvas id="chTrir"></canvas></div>
+        </div>
+        <div class="panel">
+          <p class="p-title">Incident rate by tenure <span class="hint" id="p3TenureHint"></span></p>
+          <div id="p3Tenure"></div>
+        </div>
+      </div>
+
+      <div class="panel-grid">
+        <div class="panel">
+          <p class="p-title">Sites ranked by TRIR <span class="hint">all-time · terminal sites only</span></p>
+          <div id="p3Sites"></div>
+        </div>
+        <div class="panel">
+          <p class="p-title">Incident types <span class="hint" id="p3DonutHint"></span></p>
+          <div style="display:flex; align-items:center; gap:18px;">
+            <div class="chart-box" style="width:170px; height:170px; flex:0 0 auto;"><canvas id="chDonut"></canvas></div>
+            <div id="p3DonutLegend" style="flex:1;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== PAGE 4 · MANAGER 360 ============================ -->
+    <section class="tab-page" id="p4" role="tabpanel">
+      <div class="cust-picker">
+        <input type="text" id="mgrSearch" list="mgrList" placeholder="Search 76 managers by name or ID…" aria-label="Search managers" />
+        <datalist id="mgrList"></datalist>
+        <span class="quick">try:
+          <button type="button" id="qHighestAttrition">highest team attrition</button> ·
+          <button type="button" id="qMostIncidents">most team incidents</button> ·
+          <button type="button" id="qBiggestTeam">largest team</button>
+        </span>
+      </div>
+
+      <div id="p4Body"></div>
+      <p class="small" style="margin-top:10px;">Manager 360 is a current-team snapshot — the global region/department/year filters don't apply here.</p>
+    </section>
+
+    <!-- ====================== PAGE 5 · KPI GOVERNANCE ========================= -->
+    <section class="tab-page" id="p5" role="tabpanel">
+      <div class="insight-banner tone-info" id="p5Banner"></div>
+      <div class="kpi-row" id="p5Cards"></div>
+      <div class="panel">
+        <p class="p-title">KPI definitions register <span class="hint">single source of truth · computed live from the dataset</span></p>
+        <div style="overflow-x:auto;">
+          <table class="dtable" id="p5Table"></table>
+        </div>
+        <p class="gov-note">Current values are computed across the full dataset (filters don't apply on this page). TRIR and LTIFR use the
+        standard 200,000-hours convention (100 employees × 40 hrs/week × 50 weeks). Every figure here is produced by
+        <span class="mono">pipeline/build_hr_dashboard_data.py</span>.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="dash-footer">
+  <div class="wrap">
+    <span>Methodology: attrition = voluntary exits, trailing 12mo ÷ average headcount · TRIR = recordable incidents × 200,000 ÷ hours worked · first-year attrition tracks 2023–24 hire cohorts for 365 days.</span>
+    <span>Synthetic dataset · <span id="footGen"></span></span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="assets/hr-data.js"></script>
+<script src="assets/hr-dashboard.js"></script>
+</body>
+</html>

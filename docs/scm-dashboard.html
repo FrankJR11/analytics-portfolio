@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Supply Chain &amp; Inventory Dashboard — Live</title>
+<meta name="description" content="Interactive supply chain dashboard: fill rate and supplier OTIF, inventory health and working capital, supplier 360 drill-through, and a governed KPI register." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230E6B5C'/><text x='16' y='21' font-family='monospace' font-size='11' fill='white' text-anchor='middle'>SCM</text></svg>" />
+</head>
+<body class="dash-body">
+
+<div class="dash-top">
+  <div class="wrap">
+    <div class="row1">
+      <div class="dash-title">
+        <a href="index.html" class="mono" style="font-size:12px; color:var(--muted);">← Portfolio</a>
+        <h1>Supply chain &amp; inventory dashboard</h1>
+        <span class="asof" id="asOf">as of —</span>
+      </div>
+      <div class="dash-actions">
+        <a class="btn btn-ghost" style="padding:7px 12px; font-size:13px;" href="dashboard.html">O2C dashboard ↗</a>
+        <a class="btn btn-ghost" style="padding:7px 12px; font-size:13px;" href="hr-dashboard.html">Workforce ↗</a>
+        <a class="btn btn-ghost" style="padding:7px 12px; font-size:13px;" href="fpa-dashboard.html">FP&amp;A ↗</a>
+      </div>
+    </div>
+
+    <div class="filters" role="group" aria-label="Dashboard filters">
+      <label>Region
+        <select id="fRegion"><option value="All">All</option></select>
+      </label>
+      <label>Category
+        <select id="fCategory"><option value="All">All</option></select>
+      </label>
+      <label>Year
+        <select id="fYear"><option value="All">All</option></select>
+      </label>
+      <button class="reset" id="fReset" type="button">✕ reset</button>
+      <span class="small" id="filterEcho" style="margin-left:auto;"></span>
+    </div>
+
+    <nav class="tabs" role="tablist" aria-label="Dashboard pages">
+      <button class="tab-btn active" data-tab="p1" role="tab" aria-selected="true"><span class="idx">1</span>Executive summary</button>
+      <button class="tab-btn" data-tab="p2" role="tab" aria-selected="false"><span class="idx">2</span>Supply &amp; demand</button>
+      <button class="tab-btn" data-tab="p3" role="tab" aria-selected="false"><span class="idx">3</span>Inventory health</button>
+      <button class="tab-btn" data-tab="p4" role="tab" aria-selected="false"><span class="idx">4</span>Supplier 360</button>
+      <button class="tab-btn" data-tab="p5" role="tab" aria-selected="false"><span class="idx">5</span>KPI governance</button>
+    </nav>
+  </div>
+</div>
+
+<main class="dash-main">
+  <div class="wrap">
+
+    <!-- ====================== PAGE 1 · EXECUTIVE SUMMARY ====================== -->
+    <section class="tab-page active" id="p1" role="tabpanel">
+      <div class="insight-banner" id="p1Banner"></div>
+      <div class="kpi-row" id="p1Kpis"></div>
+
+      <div class="panel-grid wide-left">
+        <div class="panel">
+          <p class="p-title">Inventory value trend <span class="hint" id="p1TrendHint"></span></p>
+          <div class="chart-box" style="height:240px;"><canvas id="chTrend"></canvas></div>
+        </div>
+        <div class="panel">
+          <p class="p-title">Regional performance <span class="hint">heat = distance from target</span></p>
+          <div id="p1Heatmap"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <p class="p-title">Dead / excess stock value by category <span class="hint" id="p1DeadHint"></span></p>
+        <div id="p1DeadBars"></div>
+      </div>
+    </section>
+
+    <!-- ====================== PAGE 2 · SUPPLY & DEMAND ========================= -->
+    <section class="tab-page" id="p2" role="tabpanel">
+      <div class="insight-banner" id="p2Banner"></div>
+
+      <div class="panel" style="margin-bottom:12px;">
+        <p class="p-title">Purchase order funnel — ordered → received → on-time &amp; in-full <span class="hint" id="p2FunnelHint"></span></p>
+        <div id="p2Funnel"></div>
+      </div>
+
+      <div class="panel-grid">
+        <div class="panel">
+          <p class="p-title">Missed-OTIF value by region, by category <span class="hint">category &amp; year filters apply</span></p>
+          <div id="p2Stacked"></div>
+        </div>
+        <div class="panel">
+          <p class="p-title">Average supplier delay <span class="hint">monthly avg · target ≤ 3 days</span></p>
+          <div class="chart-box" style="height:210px;"><canvas id="chDelay"></canvas></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <p class="p-title">Least reliable suppliers <span class="hint">all-time snapshot · region &amp; category filters apply</span></p>
+        <div id="p2Suppliers"></div>
+      </div>
+    </section>
+
+    <!-- ====================== PAGE 3 · INVENTORY HEALTH ======================== -->
+    <section class="tab-page" id="p3" role="tabpanel">
+      <div class="insight-banner" id="p3Banner"></div>
+      <div class="kpi-row" id="p3Kpis"></div>
+
+      <div class="panel-grid wide-left">
+        <div class="panel">
+          <p class="p-title">Days Inventory Outstanding by category <span class="hint" id="p3DioHint">region filter applies · target 90d</span></p>
+          <div class="chart-box" style="height:240px;"><canvas id="chDio"></canvas></div>
+        </div>
+        <div class="panel">
+          <p class="p-title">Inventory aging <span class="hint" id="p3AgingHint"></span></p>
+          <div id="p3Aging"></div>
+        </div>
+      </div>
+
+      <div class="panel-grid">
+        <div class="panel">
+          <p class="p-title">Top dead-stock items <span class="hint">as-of snapshot · region &amp; category filters apply</span></p>
+          <div id="p3Dead"></div>
+        </div>
+        <div class="panel">
+          <p class="p-title">Dead stock by category <span class="hint" id="p3DonutHint"></span></p>
+          <div style="display:flex; align-items:center; gap:18px;">
+            <div class="chart-box" style="width:170px; height:170px; flex:0 0 auto;"><canvas id="chDonut"></canvas></div>
+            <div id="p3DonutLegend" style="flex:1;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== PAGE 4 · SUPPLIER 360 ============================ -->
+    <section class="tab-page" id="p4" role="tabpanel">
+      <div class="cust-picker">
+        <input type="text" id="supSearch" list="supList" placeholder="Search 25 suppliers by name or ID…" aria-label="Search suppliers" />
+        <datalist id="supList"></datalist>
+        <span class="quick">try:
+          <button type="button" id="qWorstOtif">worst OTIF</button> ·
+          <button type="button" id="qBiggestSpend">largest spend</button> ·
+          <button type="button" id="qMostCancelled">most cancellations</button>
+        </span>
+      </div>
+
+      <div id="p4Body"></div>
+      <p class="small" style="margin-top:10px;">Supplier 360 is an all-time account snapshot — the global region/category/year filters don't apply here.</p>
+    </section>
+
+    <!-- ====================== PAGE 5 · KPI GOVERNANCE =========================== -->
+    <section class="tab-page" id="p5" role="tabpanel">
+      <div class="insight-banner tone-info" id="p5Banner"></div>
+      <div class="kpi-row" id="p5Cards"></div>
+      <div class="panel">
+        <p class="p-title">KPI definitions register <span class="hint">single source of truth · computed live from the dataset</span></p>
+        <div style="overflow-x:auto;">
+          <table class="dtable" id="p5Table"></table>
+        </div>
+        <p class="gov-note">Current values are computed across the full dataset (filters don't apply on this page). DSO-style inventory
+        metrics use the same trailing-90-day convention as the O2C dashboard. Every figure here is produced by
+        <span class="mono">pipeline/build_scm_dashboard_data.py</span>.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="dash-footer">
+  <div class="wrap">
+    <span>Methodology: DIO = (on-hand value ÷ trailing 90-day demand value) × 90 · OTIF = on-time AND in-full ÷ closed purchase orders · dead stock = 6+ months with no demand.</span>
+    <span>Synthetic dataset · <span id="footGen"></span></span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="assets/scm-data.js"></script>
+<script src="assets/scm-dashboard.js"></script>
+</body>
+</html>
