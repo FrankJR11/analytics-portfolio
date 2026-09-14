@@ -940,3 +940,78 @@ footer.site-footer .wrap { display: flex; justify-content: space-between; gap: 1
   .finding { border-left: none; border-top: 1px solid var(--line-soft); }
   .finding:first-child { border-top: none; }
 }
+
+/* ==========================================================================
+   DASHBOARD POLISH LAYER
+   Same motion/depth language as the landing-page polish layer above, applied
+   to the four dashboard shells (O2C, SCM, HR, FP&A) so they read as one
+   product instead of a plainer, data-only afterthought.
+   ========================================================================== */
+
+/* ---- kpi cards: depth + tone accent -------------------------------------- */
+.kpi {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(20,38,46,.04);
+  transition: transform 0.22s cubic-bezier(0.22,1,0.36,1), box-shadow 0.22s ease, border-color 0.22s ease;
+}
+.kpi::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--line);
+}
+.kpi.tone-up::before { background: var(--good); }
+.kpi.tone-down::before { background: var(--red); }
+.kpi.tone-warn::before { background: var(--amber); }
+.kpi:hover {
+  transform: translateY(-2px);
+  border-color: var(--ink-soft);
+  box-shadow: 0 1px 2px rgba(20,38,46,.05), 0 16px 32px -20px rgba(20,38,46,.3);
+}
+.kpi .k-value { font-variant-numeric: tabular-nums; }
+
+/* ---- panels: lift them off the page like the landing cards --------------- */
+.panel {
+  box-shadow: 0 1px 2px rgba(20,38,46,.04);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.panel:hover { border-color: var(--line-soft); box-shadow: 0 1px 2px rgba(20,38,46,.05), 0 18px 36px -24px rgba(20,38,46,.28); }
+
+/* ---- insight banners: accent bar to match .disclosure -------------------- */
+.insight-banner { border-left-width: 3px; transition: background 0.2s ease; }
+.insight-banner .ic { display: inline-block; transform: translateY(1px); }
+
+/* ---- tabs: smooth active state + hover wash ------------------------------- */
+.tab-btn {
+  border-radius: var(--r-sm) var(--r-sm) 0 0;
+  transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+.tab-btn:hover { background: var(--petrol-tint); }
+.tab-btn.active { background: transparent; }
+
+/* ---- filters: same focus language as the rest of the site ----------------- */
+.filters select,
+.cust-picker input {
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.filters select:hover,
+.cust-picker input:hover { border-color: var(--ink-soft); }
+.filters select:focus-visible,
+.cust-picker input:focus-visible {
+  outline: none;
+  border-color: var(--petrol);
+  box-shadow: 0 0 0 3px var(--petrol-tint);
+}
+
+/* ---- data tables: row hover for scannability ------------------------------ */
+.dtable tbody tr { transition: background 0.12s ease; }
+.dtable tbody tr:hover { background: var(--petrol-tint); }
+
+/* ---- sticky dashboard header: separate from content on scroll ------------- */
+.dash-top { box-shadow: 0 1px 2px rgba(20,38,46,.04); }
+
+@media (prefers-reduced-motion: reduce) {
+  .kpi, .panel, .tab-btn { transition: none !important; }
+}

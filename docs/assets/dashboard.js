@@ -106,7 +106,7 @@
 
   /* ---------------- UI atoms ---------------- */
   function kpiCard(label, value, sub, subClass) {
-    return '<div class="kpi"><div class="k-label">' + esc(label) + '</div>' +
+    return '<div class="kpi' + (subClass ? ' tone-' + subClass : '') + '"><div class="k-label">' + esc(label) + '</div>' +
            '<div class="k-value">' + value + '</div>' +
            '<div class="k-sub ' + (subClass || "") + '">' + sub + '</div></div>';
   }
