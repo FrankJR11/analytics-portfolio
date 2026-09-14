@@ -20,8 +20,8 @@
       <span data-p="name">Azim Hadi</span>
     </a>
     <nav class="nav">
-      <a href="#analyses" class="hide-m">Analyses</a>
       <a href="#dashboards" class="hide-m">Dashboards</a>
+      <a href="#analyses" class="hide-m">Analyses</a>
       <a href="#experience" class="hide-m">Experience</a>
       <a href="#about" class="hide-m">About</a>
       <a href="#contact" class="btn btn-primary">Get in touch <span class="arr">↗</span></a>
@@ -42,7 +42,7 @@
         each time: find the pattern that changes what someone should do on Monday.
       </p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="#analyses">See the analyses</a>
+        <a class="btn btn-primary" href="#dashboards">See the dashboards</a>
         <a class="btn btn-ghost" href="https://github.com/FrankJR11/Data-Analyst-Portfolio" data-p="github" target="_blank" rel="noopener">GitHub <span class="arr">↗</span></a>
       </div>
       <p class="meta-line">Python (pandas, scikit-learn) · SQL · Power BI · Statistics BSc · Data Analyst at MR. D.I.Y.</p>
@@ -73,8 +73,72 @@
     </div>
   </section>
 
+  <!-- =========================== DASHBOARDS =========================== -->
+  <section class="section" id="dashboards">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Interactive dashboards</p>
+        <h2 class="section-title">Building the reporting layer, not just the analysis</h2>
+        <p class="lead">Dimensional models, automated KPI pipelines, and dashboards someone could
+        run a weekly meeting from — the eight analyses further down are notebooks; these four are
+        products.</p>
+      </div>
+
+      <div class="disclosure">
+        <p><strong>These four run on simulated data, and that's deliberate.</strong> Nobody publishes
+        their real order-to-cash ledger, HR records, or cost-centre budgets — so to demonstrate
+        dimensional modelling and KPI governance at realistic scale, I generated a coherent
+        multinational operator and modelled it properly. Treat these as evidence of
+        <em>engineering and modelling</em>; the analytical judgement sits in the eight real-data
+        analyses below.</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="card project-card">
+          <span class="pill pill-info">Simulated data</span>
+          <h3>Order-to-Cash Operations</h3>
+          <p>Five pages tracking 12 governed KPIs across a 50,000-order star schema — order health, delivery performance, DSO and A/R aging, customer drill-through, and a KPI definitions register.</p>
+          <div class="badges">
+            <span class="chip">Star schema</span><span class="chip">Python pipeline</span><span class="chip">DSO / OTD</span>
+          </div>
+          <div class="links"><a href="dashboard.html">Open dashboard ↗</a></div>
+        </div>
+
+        <div class="card project-card">
+          <span class="pill pill-info">Simulated data</span>
+          <h3>Supply Chain &amp; Inventory</h3>
+          <p>Inventory health and supplier reliability across 8 terminals and 25 suppliers, separating a stockout problem from a dead-stock problem — two root causes needing two different fixes.</p>
+          <div class="badges">
+            <span class="chip">Star schema</span><span class="chip">DIO / OTIF</span><span class="chip">Python pipeline</span>
+          </div>
+          <div class="links"><a href="scm-dashboard.html">Open dashboard ↗</a></div>
+        </div>
+
+        <div class="card project-card">
+          <span class="pill pill-info">Simulated data</span>
+          <h3>Workforce &amp; Safety</h3>
+          <p>Attrition, hiring funnel and safety incidents across 12 sites, with manager-level drill-through and TRIR/LTIFR computed on the standard 200,000-hour convention.</p>
+          <div class="badges">
+            <span class="chip">Cohort analysis</span><span class="chip">TRIR / LTIFR</span><span class="chip">Star schema</span>
+          </div>
+          <div class="links"><a href="hr-dashboard.html">Open dashboard ↗</a></div>
+        </div>
+
+        <div class="card project-card">
+          <span class="pill pill-info">Simulated data</span>
+          <h3>FP&amp;A · Cost &amp; Budget</h3>
+          <p>Budget-versus-actual variance across 60 cost-centre and site combinations, plus a capex project tracker — showing how a healthy-looking aggregate can hide a concentrated overrun.</p>
+          <div class="badges">
+            <span class="chip">Variance analysis</span><span class="chip">Capex tracking</span><span class="chip">Star schema</span>
+          </div>
+          <div class="links"><a href="fpa-dashboard.html">Open dashboard ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ============================ ANALYSES ============================ -->
-  <section class="section" id="analyses">
+  <section class="section alt" id="analyses">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Analyses</p>
@@ -241,69 +305,6 @@
     </div>
   </section>
 
-  <!-- =========================== DASHBOARDS =========================== -->
-  <section class="section alt" id="dashboards">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Interactive dashboards</p>
-        <h2 class="section-title">Building the reporting layer, not just the analysis</h2>
-        <p class="lead">The analyses above are notebooks. These four are products: dimensional models,
-        automated KPI pipelines, and dashboards someone could run a weekly meeting from.</p>
-      </div>
-
-      <div class="disclosure">
-        <p><strong>These four run on simulated data, and that's deliberate.</strong> Nobody publishes
-        their real order-to-cash ledger, HR records, or cost-centre budgets — so to demonstrate
-        dimensional modelling and KPI governance at realistic scale, I generated a coherent
-        multinational operator and modelled it properly. Treat these as evidence of
-        <em>engineering and modelling</em>; the analytical judgement sits in the eight real-data
-        analyses above.</p>
-      </div>
-
-      <div class="projects-grid">
-        <div class="card project-card">
-          <span class="pill pill-info">Simulated data</span>
-          <h3>Order-to-Cash Operations</h3>
-          <p>Five pages tracking 12 governed KPIs across a 50,000-order star schema — order health, delivery performance, DSO and A/R aging, customer drill-through, and a KPI definitions register.</p>
-          <div class="badges">
-            <span class="chip">Star schema</span><span class="chip">Python pipeline</span><span class="chip">DSO / OTD</span>
-          </div>
-          <div class="links"><a href="dashboard.html">Open dashboard ↗</a></div>
-        </div>
-
-        <div class="card project-card">
-          <span class="pill pill-info">Simulated data</span>
-          <h3>Supply Chain &amp; Inventory</h3>
-          <p>Inventory health and supplier reliability across 8 terminals and 25 suppliers, separating a stockout problem from a dead-stock problem — two root causes needing two different fixes.</p>
-          <div class="badges">
-            <span class="chip">Star schema</span><span class="chip">DIO / OTIF</span><span class="chip">Python pipeline</span>
-          </div>
-          <div class="links"><a href="scm-dashboard.html">Open dashboard ↗</a></div>
-        </div>
-
-        <div class="card project-card">
-          <span class="pill pill-info">Simulated data</span>
-          <h3>Workforce &amp; Safety</h3>
-          <p>Attrition, hiring funnel and safety incidents across 12 sites, with manager-level drill-through and TRIR/LTIFR computed on the standard 200,000-hour convention.</p>
-          <div class="badges">
-            <span class="chip">Cohort analysis</span><span class="chip">TRIR / LTIFR</span><span class="chip">Star schema</span>
-          </div>
-          <div class="links"><a href="hr-dashboard.html">Open dashboard ↗</a></div>
-        </div>
-
-        <div class="card project-card">
-          <span class="pill pill-info">Simulated data</span>
-          <h3>FP&amp;A · Cost &amp; Budget</h3>
-          <p>Budget-versus-actual variance across 60 cost-centre and site combinations, plus a capex project tracker — showing how a healthy-looking aggregate can hide a concentrated overrun.</p>
-          <div class="badges">
-            <span class="chip">Variance analysis</span><span class="chip">Capex tracking</span><span class="chip">Star schema</span>
-          </div>
-          <div class="links"><a href="fpa-dashboard.html">Open dashboard ↗</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- =========================== EXPERIENCE =========================== -->
   <section class="section" id="experience">
     <div class="wrap">
@@ -330,7 +331,7 @@
         <li class="tl-item" data-reveal>
           <div class="tl-when">Oct 2023 — Dec 2025</div>
           <div class="tl-what">
-            <h3>Executive, Human Capital</h3>
+            <h3>Administrative Assistant, Human Capital</h3>
             <p class="tl-org">INCEIF University</p>
             <ul>
               <li>Built a digital expiry tracker for expatriate visas — 20+ renewals a year at 100% on-time submission.</li>
