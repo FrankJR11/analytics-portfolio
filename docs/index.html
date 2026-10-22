@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Muhammad Azim Hadi — Data Analyst · Analytics Portfolio</title>
-<meta name="description" content="Data analyst in Petaling Jaya. Four interactive dashboards built end to end, plus eight real-data case studies across telecom, banking, retail, HR, insurance, automotive, sport and fraud." />
+<meta name="description" content="Data analyst in Petaling Jaya. Five interactive dashboards built end to end, one on real public football-finance data, plus eight real-data case studies across telecom, banking, retail, HR, insurance, automotive, sport and fraud." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -79,13 +79,42 @@
       <div class="section-head">
         <p class="eyebrow">Interactive dashboards</p>
         <h2 class="section-title">Dashboards built to run a real meeting from</h2>
-        <p class="lead">Four dashboards, each with governed KPIs and a proper dimensional model
-        underneath — not just the analysis, the whole reporting layer. The eight write-ups below
-        are notebooks; these are products.</p>
+        <p class="lead">Five dashboards, each with the whole reporting layer underneath — not just
+        the analysis. One is built end to end on real public data; four model a simulated company
+        properly. The eight write-ups below are notebooks; these are products.</p>
       </div>
 
+      <article class="card project-card project-featured">
+        <div class="pf-main">
+          <span><span class="pill pill-good">Real public data</span></span>
+          <h3>Big Six transfer spend &amp; finances, 2009/10 to 2026</h3>
+          <p class="pf-q">Did Manchester City outspend its rivals in the seasons the Premier League's
+          charges cover — and did selling players pay for it?</p>
+          <p>About 2,700 transfers from Transfermarkt and press reports, joined to wage bills, club
+          accounts, trophies and managers' pay for all six clubs. Each sale is matched back to what
+          the player cost, so the dashboard shows who actually profited from trading players.</p>
+          <p class="a-find">City spent the most of the six in the nine charged seasons. Over the whole
+          period it got <strong>46%</strong> back through sales, but almost all its gain came from
+          academy graduates (<strong>€358m</strong>): bought players were sold for
+          <strong>€217m</strong> less than they cost.</p>
+          <div class="badges">
+            <span class="chip">Python ETL</span><span class="chip">Data validation</span><span class="chip">Entity matching</span><span class="chip">d3.js</span>
+          </div>
+          <div class="links">
+            <a href="big6-dashboard.html">Open dashboard ↗</a>
+            <a href="https://github.com/FrankJR11/analytics-portfolio/tree/main/pipeline/big6" target="_blank" rel="noopener">Pipeline &amp; method ↗</a>
+          </div>
+        </div>
+        <div class="pf-stats" aria-label="Headline figures">
+          <div class="pf-stat"><span class="v">€1.44bn</span><span class="l">City's spend in the nine charged seasons, the most of the six</span></div>
+          <div class="pf-stat"><span class="v">€1.88bn</span><span class="l">City's net spend since 2009/10, level with Man United for the highest</span></div>
+          <div class="pf-stat"><span class="v">€1.60bn</span><span class="l">City's income from player sales, second to Chelsea's €2.45bn</span></div>
+          <div class="pf-stat"><span class="v">8 checks</span><span class="l">data-quality tests on every rebuild: keys unique, totals reconcile, every figure traces to a source</span></div>
+        </div>
+      </article>
+
       <div class="disclosure">
-        <p><strong>These four run on simulated data — on purpose.</strong> Nobody hands out their
+        <p><strong>The four below run on simulated data — on purpose.</strong> Nobody hands out their
         real order-to-cash ledger, HR records, or cost-centre budgets, so I built a realistic
         multinational operator from scratch and modelled it properly. Think of these as proof I
         can build the engineering and the model; the judgement calls live in the eight real-data
@@ -432,7 +461,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <span>© <span id="year"></span> <span data-p="name">Muhammad Azim Hadi</span> · Built by hand — HTML, CSS, vanilla JS, Python.</span>
-    <span>Analyses use public datasets. The four dashboards use simulated data, labelled as such.</span>
+    <span>Analyses and the Big Six dashboard use public data. The four operations dashboards use simulated data, labelled as such.</span>
   </div>
 </footer>
 

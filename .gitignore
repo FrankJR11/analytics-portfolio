@@ -25,3 +25,7 @@ scratch/
 
 # Regenerated source tables (the .xlsx snapshot is the committed version)
 data/*.csv
+
+# Big Six pipeline: downloaded source and intermediate extracts (rebuilt by run_pipeline.py)
+data/big6/raw/
+data/big6/staging/

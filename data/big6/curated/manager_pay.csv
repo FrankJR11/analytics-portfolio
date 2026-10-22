@@ -1,0 +1,50 @@
+id,manager_id,club,manager,year,reported,pay_gbp_m,basis,src
+p001,m-man-city-roberto-mancini-2009,Man City,Roberto Mancini,2011,£4.9m a year,4.9,France Football ranking,smole12
+p002,m-man-city-manuel-pellegrini-2013,Man City,Manuel Pellegrini,2014,£3.47m a year,3.47,Salary,vng14
+p003,m-man-city-pep-guardiola-2016,Man City,Pep Guardiola,2016,£15m a year,15,Salary,qoly16
+p004,m-man-city-pep-guardiola-2016,Man City,Pep Guardiola,2022,£19m a year,19,Salary,shoot22
+p005,m-man-city-pep-guardiola-2016,Man City,Pep Guardiola,2025,£20m a year,20,Salary,pf25
+p006,m-man-city-enzo-maresca-2026,Man City,Enzo Maresca,2026,£10m a year,10,Salary,fw26
+p007,m-arsenal-arsène-wenger-1996,Arsenal,Arsène Wenger,2011,£7.5m a year,7.5,France Football ranking,smole12
+p008,m-arsenal-arsène-wenger-1996,Arsenal,Arsène Wenger,2014,£6.89m a year,6.89,Salary,vng14
+p009,m-arsenal-arsène-wenger-1996,Arsenal,Arsène Wenger,2016,£8.3m a year,8.3,Salary,qoly16
+p010,m-arsenal-unai-emery-2018,Arsenal,Unai Emery,2018,£6m a year,6,Salary,slm
+p011,m-arsenal-mikel-arteta-2019,Arsenal,Mikel Arteta,2020,£5m a year,5,Salary,sk20
+p012,m-arsenal-mikel-arteta-2019,Arsenal,Mikel Arteta,2024,£9m a year,9,Salary,njo24
+p013,m-arsenal-mikel-arteta-2019,Arsenal,Mikel Arteta,2025,£13m a year,13,Salary,pf25
+p014,m-arsenal-mikel-arteta-2019,Arsenal,Mikel Arteta,2026,£15m a year,15,Salary,fw26
+p015,m-chelsea-carlo-ancelotti-2009,Chelsea,Carlo Ancelotti,2010,€6m (2010 earnings),5.15,"France Football, converted at 2010 average",ff10
+p016,m-chelsea-andré-villas-boas-2011,Chelsea,André Villas-Boas,2011,£5m a year (three-year deal),5,Salary,cam13
+p017,m-chelsea-josé-mourinho-2013,Chelsea,José Mourinho,2014,£8.37m a year,8.37,Salary,vng14
+p018,m-chelsea-antonio-conte-2016,Chelsea,Antonio Conte,2017,"£125,000 a week",6.5,Weekly figure × 52,sld17
+p019,m-chelsea-maurizio-sarri-2018,Chelsea,Maurizio Sarri,2018,£5m a year,5,Salary,slm
+p020,m-chelsea-frank-lampard-2019,Chelsea,Frank Lampard,2020,£5.5m a year,5.5,Salary,sk20
+p021,m-chelsea-thomas-tuchel-2021,Chelsea,Thomas Tuchel,2021,£7m a year,7,Base salary,nm21
+p022,m-chelsea-graham-potter-2022,Chelsea,Graham Potter,2022,£12m a year,12,Salary,shoot22
+p023,m-chelsea-mauricio-pochettino-2023,Chelsea,Mauricio Pochettino,2023,£10.4m a year (net),10.4,Net salary as reported,cef23
+p024,m-chelsea-enzo-maresca-2024,Chelsea,Enzo Maresca,2024,£4.2m a year,4.2,Salary (speculated),njo24
+p025,m-chelsea-liam-rosenior-2026,Chelsea,Liam Rosenior,2026,£3.5m a year,3.5,Salary,slm
+p026,m-chelsea-xabi-alonso-2026,Chelsea,Xabi Alonso,2026,£11.5m a year,11.5,Salary,fw26
+p027,m-liverpool-brendan-rodgers-2012,Liverpool,Brendan Rodgers,2014,€4.9m (2014 earnings),3.95,"France Football, converted at 2014 average",ff14
+p028,m-liverpool-jürgen-klopp-2015,Liverpool,Jürgen Klopp,2016,£7m a year,7,Salary,qoly16
+p029,m-liverpool-jürgen-klopp-2015,Liverpool,Jürgen Klopp,2021,£15m a year,15,Base salary,nm21
+p030,m-liverpool-jürgen-klopp-2015,Liverpool,Jürgen Klopp,2022,£16m a year,16,Salary,shoot22
+p031,m-liverpool-arne-slot-2024,Liverpool,Arne Slot,2025,£6.2m a year,6.2,Salary,pf25
+p032,m-liverpool-andoni-iraola-2026,Liverpool,Andoni Iraola,2026,£8m a year,8,Salary,fw26
+p033,m-man-united-alex-ferguson-1986,Man United,Alex Ferguson,2011,around £7m a year,7,France Football ranking,smole12
+p034,m-man-united-david-moyes-2013,Man United,David Moyes,2013,six-year deal worth £30m,5,Contract value ÷ 6 years,br14
+p035,m-man-united-louis-van-gaal-2014,Man United,Louis van Gaal,2014,£7m a year,7,Salary,vng14
+p036,m-man-united-josé-mourinho-2016,Man United,José Mourinho,2016,£15m a year,15,Salary,qoly16
+p037,m-man-united-ole-gunnar-solskjær-2018,Man United,Ole Gunnar Solskjær,2021,£7.5m a year,7.5,Base salary,nm21
+p038,m-man-united-erik-ten-hag-2022,Man United,Erik ten Hag,2022,£9m a year,9,Expected salary on appointment,ft22
+p039,m-man-united-erik-ten-hag-2022,Man United,Erik ten Hag,2024,£6.75m a year,6.75,Salary,njo24
+p040,m-man-united-ruben-amorim-2024,Man United,Ruben Amorim,2025,£6.5m a year,6.5,Salary,pf25
+p041,m-man-united-michael-carrick-2026,Man United,Michael Carrick,2026,£5m a year,5,Salary,fw26
+p042,m-tottenham-andré-villas-boas-2012,Tottenham,André Villas-Boas,2012,€4.5m a year,3.65,"France Football, converted at 2012 average",fe12
+p043,m-tottenham-mauricio-pochettino-2014,Tottenham,Mauricio Pochettino,2016,£5.5m a year (May 2016 deal),5.5,Salary,tel18
+p044,m-tottenham-mauricio-pochettino-2014,Tottenham,Mauricio Pochettino,2018,around £8.5m a year,8.5,Salary,tel18
+p045,m-tottenham-josé-mourinho-2019,Tottenham,José Mourinho,2020,£15m a year,15,Salary,pd20
+p046,m-tottenham-antonio-conte-2021,Tottenham,Antonio Conte,2021,£15m a year,15,Base salary,nm21
+p047,m-tottenham-ange-postecoglou-2023,Tottenham,Ange Postecoglou,2025,£5m a year,5,Salary,pf25
+p048,m-tottenham-thomas-frank-2025,Tottenham,Thomas Frank,2025,£8m a year,8,Salary,cam26
+p049,m-tottenham-roberto-de-zerbi-2026,Tottenham,Roberto De Zerbi,2026,£8m a year,8,Salary,fw26

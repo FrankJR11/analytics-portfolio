@@ -168,6 +168,7 @@ h2.section-title {
 .nav a { color: var(--ink-soft); font-size: 14.5px; font-weight: 500; }
 .nav a:hover { color: var(--ink); text-decoration: none; }
 .nav .btn { padding: 8px 14px; font-size: 14px; }
+.nav a.btn-primary, .nav a.btn-primary:hover { color: #fff; }  /* keep the CTA's text white over .nav a */
 
 /* ---- hero + signature flow rail ---------------------------------------- */
 .hero {
@@ -1014,4 +1015,16 @@ footer.site-footer .wrap { display: flex; justify-content: space-between; gap: 1
 
 @media (prefers-reduced-motion: reduce) {
   .kpi, .panel, .tab-btn { transition: none !important; }
+}
+
+/* ---- featured project: real public data (Big Six dashboard) -------------- */
+.project-featured { display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px 36px; align-items: start; margin-bottom: 28px; }
+.project-featured .pf-main { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.project-featured .pf-q { color: var(--ink); font-weight: 500; }
+.project-featured .pf-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.pf-stat { border: 1px solid var(--line); border-radius: var(--r-md); padding: 12px 14px; background: var(--paper); }
+.pf-stat .v { display: block; font-family: var(--mono); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.02em; color: var(--ink); line-height: 1.2; }
+.pf-stat .l { display: block; margin-top: 4px; font-size: 12.5px; color: var(--muted); line-height: 1.45; }
+@media (max-width: 900px) {
+  .project-featured { grid-template-columns: 1fr; }
 }
