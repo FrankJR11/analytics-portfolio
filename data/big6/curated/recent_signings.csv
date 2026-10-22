@@ -1,0 +1,203 @@
+club,season,window,player,from_club,fee,currency,deal_type,source
+Arsenal,2023/24,Summer,Declan Rice,West Ham,105,GBP,transfer,sl23
+Arsenal,2023/24,Summer,Kai Havertz,Chelsea,65,GBP,transfer,sl23
+Arsenal,2023/24,Summer,Jurriën Timber,Ajax,38,GBP,transfer,sl23
+Arsenal,2023/24,Summer,David Raya,Brentford,3,GBP,loan,wk
+Chelsea,2023/24,Summer,Moisés Caicedo,Brighton,115,GBP,transfer,sl23
+Chelsea,2023/24,Summer,Roméo Lavia,Southampton,58,GBP,transfer,sl23
+Chelsea,2023/24,Summer,Christopher Nkunku,RB Leipzig,52,GBP,transfer,sl23
+Chelsea,2023/24,Summer,Cole Palmer,Man City,40,GBP,transfer,sl23
+Chelsea,2023/24,Summer,Axel Disasi,Monaco,38.5,GBP,transfer,sl23
+Chelsea,2023/24,Summer,Nicolas Jackson,Villarreal,30,GBP,transfer,sl23
+Chelsea,2023/24,Summer,Robert Sánchez,Brighton,25,GBP,transfer,sl23
+Chelsea,2023/24,Summer,Lesley Ugochukwu,Rennes,23.5,GBP,transfer,sl23
+Chelsea,2023/24,Summer,Deivid Washington,Santos,17.2,GBP,transfer,sl23
+Chelsea,2023/24,Summer,Đorđe Petrović,New England Revolution,14,GBP,transfer,sl23
+Chelsea,2023/24,Summer,Ângelo Gabriel,Santos,13,GBP,transfer,wk
+Chelsea,2023/24,Summer,Ishé Samuels-Smith,Everton,4,GBP,transfer,wk
+Chelsea,2023/24,Summer,Alex Matos,Norwich,,GBP,free,wk
+Chelsea,2023/24,Summer,Diego Moreira,Benfica,,GBP,free,wk
+Chelsea,2023/24,Summer,Ollie Harrison,Newcastle,,GBP,undisclosed,wk
+Chelsea,2023/24,January,Dujuan Richards,Phoenix Academy,,GBP,undisclosed,wk
+Liverpool,2023/24,Summer,Dominik Szoboszlai,RB Leipzig,60,GBP,transfer,sl23
+Liverpool,2023/24,Summer,Alexis Mac Allister,Brighton,40,GBP,transfer,sl23
+Liverpool,2023/24,Summer,Ryan Gravenberch,Bayern Munich,34,GBP,transfer,sl23
+Liverpool,2023/24,Summer,Wataru Endo,VfB Stuttgart,16.2,GBP,transfer,sl23
+Man City,2023/24,Summer,Joško Gvardiol,RB Leipzig,77.6,GBP,transfer,sl23
+Man City,2023/24,Summer,Jérémy Doku,Rennes,55.4,GBP,transfer,sl23
+Man City,2023/24,Summer,Matheus Nunes,Wolves,53,GBP,transfer,sl23
+Man City,2023/24,Summer,Mateo Kovačić,Chelsea,30,GBP,transfer,sl23
+Man City,2023/24,Summer,Spike Brits,AFC Wimbledon,,GBP,undisclosed,wk
+Man City,2023/24,Summer,Jamal Baptiste,West Ham,,GBP,free,wk
+Man United,2023/24,Summer,Rasmus Højlund,Atalanta,72,GBP,transfer,sl23
+Man United,2023/24,Summer,Mason Mount,Chelsea,60,GBP,transfer,sl23
+Man United,2023/24,Summer,André Onana,Inter,47,GBP,transfer,sl23
+Man United,2023/24,Summer,Altay Bayındır,Fenerbahçe,4.5,GBP,transfer,sl23
+Man United,2023/24,Summer,Jonny Evans,Without club,,GBP,free,sl23
+Man United,2023/24,Summer,Sofyan Amrabat,Fiorentina,,GBP,loan,sl23
+Man United,2023/24,Summer,Sergio Reguilón,Tottenham,,GBP,loan,sl23
+Man United,2023/24,Summer,Harry Amass,Watford,,GBP,undisclosed,wk
+Man United,2023/24,Summer,Jack & Tyler Fletcher,Man City,,GBP,undisclosed,wk
+Man United,2023/24,Summer,Kie Plumley,Without club,,GBP,free,wk
+Tottenham,2023/24,Summer,Brennan Johnson,Nottingham Forest,47.5,GBP,transfer,sl23
+Tottenham,2023/24,Summer,James Maddison,Leicester,40,GBP,transfer,sl23
+Tottenham,2023/24,Summer,Pedro Porro,Sporting CP,38,GBP,transfer,sl23
+Tottenham,2023/24,Summer,Micky van de Ven,Wolfsburg,35,GBP,transfer,sl23
+Tottenham,2023/24,Summer,Dejan Kulusevski,Juventus,25.5,GBP,transfer,sl23
+Tottenham,2023/24,Summer,Guglielmo Vicario,Empoli,17.2,GBP,transfer,sl23
+Tottenham,2023/24,Summer,Manor Solomon,Shakhtar Donetsk,,GBP,free,sl23
+Tottenham,2023/24,Summer,Ashley Phillips,Blackburn,,GBP,undisclosed,wk
+Tottenham,2023/24,Summer,Alejo Véliz,Rosario Central,,GBP,undisclosed,wk
+Tottenham,2023/24,January,Radu Drăgușin,Genoa,26.7,GBP,transfer,wk
+Tottenham,2023/24,January,Timo Werner,RB Leipzig,,GBP,loan,wk
+Arsenal,2024/25,Summer,Riccardo Calafiori,Bologna,33.6,GBP,transfer,f365
+Arsenal,2024/25,Summer,Mikel Merino,Real Sociedad,31.2,GBP,transfer,f365
+Arsenal,2024/25,Summer,David Raya,Brentford,27,GBP,transfer,f365
+Arsenal,2024/25,Summer,Neto,Bournemouth,,GBP,loan,f365
+Arsenal,2024/25,Summer,Raheem Sterling,Chelsea,,GBP,loan,f365
+Chelsea,2024/25,Summer,Pedro Neto,Wolves,54,GBP,transfer,f365
+Chelsea,2024/25,Summer,João Félix,Atlético Madrid,42,GBP,transfer,f365
+Chelsea,2024/25,Summer,Kiernan Dewsbury-Hall,Leicester,30,GBP,transfer,f365
+Chelsea,2024/25,Summer,Filip Jørgensen,Villarreal,20.7,GBP,transfer,f365
+Chelsea,2024/25,Summer,Omari Kellyman,Aston Villa,19,GBP,transfer,f365
+Chelsea,2024/25,Summer,Mike Penders,Genk,16.9,GBP,transfer,f365
+Chelsea,2024/25,Summer,Aarón Anselmino,Boca Juniors,15.7,GBP,transfer,f365
+Chelsea,2024/25,Summer,Renato Veiga,Basel,11.7,GBP,transfer,f365
+Chelsea,2024/25,Summer,Caleb Wiley,Atlanta United,8.5,GBP,transfer,f365
+Chelsea,2024/25,Summer,Marc Guiu,Barcelona,5.1,GBP,transfer,f365
+Chelsea,2024/25,Summer,Tosin Adarabioyo,Fulham,,GBP,free,f365
+Chelsea,2024/25,Summer,Jadon Sancho,Man United,,GBP,loan,f365
+Liverpool,2024/25,Summer,Federico Chiesa,Juventus,10,GBP,transfer,f365
+Man City,2024/25,Summer,Savinho,Troyes,21,GBP,transfer,f365
+Man City,2024/25,Summer,İlkay Gündoğan,Barcelona,,GBP,free,f365
+Man City,2024/25,Summer,Divin Mubama,West Ham,2,GBP,transfer,wk
+Man City,2024/25,January,Omar Marmoush,Eintracht Frankfurt,59,GBP,transfer,m90
+Man City,2024/25,January,Nico González,Porto,50,GBP,transfer,m90
+Man City,2024/25,January,Abdukodir Khusanov,Lens,33.5,GBP,transfer,m90
+Man City,2024/25,January,Vitor Reis,Palmeiras,29.6,GBP,transfer,m90
+Man City,2024/25,January,Claudio Echeverri,River Plate,12.5,GBP,transfer,wk
+Man City,2024/25,January,Juma Bah,AIK Freetown,3.75,GBP,transfer,m90
+Man City,2024/25,January,Christian McFarlane,New York City,,GBP,undisclosed,wk
+Man United,2024/25,Summer,Leny Yoro,Lille,52,GBP,transfer,f365
+Man United,2024/25,Summer,Manuel Ugarte,PSG,42.3,GBP,transfer,f365
+Man United,2024/25,Summer,Matthijs de Ligt,Bayern Munich,38.4,GBP,transfer,f365
+Man United,2024/25,Summer,Joshua Zirkzee,Bologna,36.5,GBP,transfer,f365
+Man United,2024/25,Summer,Noussair Mazraoui,Bayern Munich,12.8,GBP,transfer,f365
+Man United,2024/25,January,Patrick Dorgu,Lecce,29.2,GBP,transfer,m90
+Man United,2024/25,January,Ayden Heaven,Arsenal,1.5,GBP,transfer,m90
+Tottenham,2024/25,Summer,Dominic Solanke,Bournemouth,55,GBP,transfer,f365
+Tottenham,2024/25,Summer,Archie Gray,Leeds,35,GBP,transfer,f365
+Tottenham,2024/25,Summer,Wilson Odobert,Burnley,25,GBP,transfer,f365
+Tottenham,2024/25,Summer,Lucas Bergvall,Djurgården,8.5,GBP,transfer,f365
+Tottenham,2024/25,January,Antonín Kinský,Slavia Prague,12.5,GBP,transfer,m90
+Tottenham,2024/25,January,Yang Min-hyeok,Gangwon FC,3.3,GBP,transfer,m90
+Tottenham,2024/25,January,Kevin Danso,Lens,,GBP,loan,m90
+Tottenham,2024/25,January,Mathys Tel,Bayern Munich,,GBP,loan,m90
+Arsenal,2025/26,Summer,Eberechi Eze,Crystal Palace,67.5,GBP,transfer,fs25
+Arsenal,2025/26,Summer,Viktor Gyökeres,Sporting CP,63.5,GBP,transfer,fs25
+Arsenal,2025/26,Summer,Noni Madueke,Chelsea,52,GBP,transfer,fs25
+Arsenal,2025/26,Summer,Martín Zubimendi,Real Sociedad,51,GBP,transfer,fs25
+Arsenal,2025/26,Summer,Christian Nørgaard,Brentford,15,GBP,transfer,fs25
+Arsenal,2025/26,Summer,Cristhian Mosquera,Valencia,13,GBP,transfer,fs25
+Arsenal,2025/26,Summer,Kepa Arrizabalaga,Chelsea,5,GBP,transfer,fs25
+Arsenal,2025/26,Summer,Piero Hincapié,Bayer Leverkusen,,GBP,loan,fs25
+Arsenal,2025/26,January,Evan Mooney,St Mirren,,EUR,undisclosed,fsj26
+Chelsea,2025/26,Summer,João Pedro,Brighton,60,GBP,transfer,fs25
+Chelsea,2025/26,Summer,Jamie Gittens,Borussia Dortmund,51.5,GBP,transfer,fs25
+Chelsea,2025/26,Summer,Alejandro Garnacho,Man United,40,GBP,transfer,fs25
+Chelsea,2025/26,Summer,Jorrel Hato,Ajax,38.5,GBP,transfer,fs25
+Chelsea,2025/26,Summer,Liam Delap,Ipswich,30,GBP,transfer,fs25
+Chelsea,2025/26,Summer,Estêvão,Palmeiras,29,GBP,transfer,fs25
+Chelsea,2025/26,Summer,Dário Essugo,Sporting CP,18.5,GBP,transfer,fs25
+Chelsea,2025/26,Summer,Kendry Páez,Independiente del Valle,17.3,GBP,transfer,fs25
+Chelsea,2025/26,Summer,Mamadou Sarr,Strasbourg,12,GBP,transfer,fs25
+Chelsea,2025/26,January,Yisa Alao,Sheffield Wednesday,,EUR,undisclosed,fsj26
+Liverpool,2025/26,Summer,Alexander Isak,Newcastle,125,GBP,transfer,fs25
+Liverpool,2025/26,Summer,Florian Wirtz,Bayer Leverkusen,116,GBP,transfer,fs25
+Liverpool,2025/26,Summer,Hugo Ekitiké,Eintracht Frankfurt,79,GBP,transfer,fs25
+Liverpool,2025/26,Summer,Milos Kerkez,Bournemouth,40,GBP,transfer,fs25
+Liverpool,2025/26,Summer,Jeremie Frimpong,Bayer Leverkusen,29.5,GBP,transfer,fs25
+Liverpool,2025/26,Summer,Giorgi Mamardashvili,Valencia,29,GBP,transfer,fs25
+Liverpool,2025/26,Summer,Giovanni Leoni,Parma,26,GBP,transfer,fs25
+Liverpool,2025/26,Summer,Ármin Pécsi,Puskás Akadémia,1.5,GBP,transfer,fs25
+Liverpool,2025/26,Summer,Freddie Woodman,Preston,,GBP,free,fs25
+Liverpool,2025/26,January,Ifeanyi Ndukwe,Austria Wien,3,EUR,transfer,fsj26
+Liverpool,2025/26,January,Mor Talla Ndiaye,Amitié FC,1.2,EUR,transfer,fsj26
+Man City,2025/26,Summer,Tijjani Reijnders,AC Milan,46.3,GBP,transfer,fs25
+Man City,2025/26,Summer,Rayan Aït-Nouri,Wolves,36,GBP,transfer,fs25
+Man City,2025/26,Summer,Rayan Cherki,Lyon,34,GBP,transfer,fs25
+Man City,2025/26,Summer,James Trafford,Burnley,31,GBP,transfer,fs25
+Man City,2025/26,Summer,Gianluigi Donnarumma,PSG,26,GBP,transfer,fs25
+Man City,2025/26,Summer,Sverre Nypan,Rosenborg,12.5,GBP,transfer,fs25
+Man City,2025/26,Summer,Marcus Bettinelli,Chelsea,,GBP,undisclosed,fs25
+Man City,2025/26,Summer,Caelan Cadamarteri,Sheffield Wednesday,,GBP,undisclosed,wk
+Man City,2025/26,January,Antoine Semenyo,Bournemouth,72,EUR,transfer,fsj26
+Man City,2025/26,January,Marc Guéhi,Crystal Palace,23,EUR,transfer,fsj26
+Man United,2025/26,Summer,Benjamin Šeško,RB Leipzig,73.7,GBP,transfer,fs25
+Man United,2025/26,Summer,Bryan Mbeumo,Brentford,71,GBP,transfer,fs25
+Man United,2025/26,Summer,Matheus Cunha,Wolves,62.5,GBP,transfer,fs25
+Man United,2025/26,Summer,Senne Lammens,Royal Antwerp,18.2,GBP,transfer,fs25
+Man United,2025/26,Summer,Diego León,Cerro Porteño,7,GBP,transfer,fs25
+Tottenham,2025/26,Summer,Mohammed Kudus,West Ham,55,GBP,transfer,fs25
+Tottenham,2025/26,Summer,Xavi Simons,RB Leipzig,51,GBP,transfer,fs25
+Tottenham,2025/26,Summer,Mathys Tel,Bayern Munich,29.9,GBP,transfer,fs25
+Tottenham,2025/26,Summer,Kevin Danso,Lens,20.9,GBP,transfer,fs25
+Tottenham,2025/26,Summer,Luka Vušković,Hajduk Split,9.5,GBP,transfer,fs25
+Tottenham,2025/26,Summer,Kota Takai,Kawasaki Frontale,5,GBP,transfer,fs25
+Tottenham,2025/26,Summer,João Palhinha,Bayern Munich,,GBP,loan,fs25
+Tottenham,2025/26,January,Conor Gallagher,Atlético Madrid,40,EUR,transfer,fsj26
+Tottenham,2025/26,January,Souza,Santos,15,EUR,transfer,fsj26
+Tottenham,2025/26,January,Mason Melia,St Patrick's,,EUR,undisclosed,fsj26
+Tottenham,2025/26,January,James Wilson,Hearts,,EUR,loan,fsj26
+Arsenal,2026/27,Summer,Bruno Guimarães,Newcastle,75,GBP,transfer,sky26
+Arsenal,2026/27,Summer,Ezri Konsa,Aston Villa,55,GBP,transfer,sky26
+Arsenal,2026/27,Summer,Piero Hincapié,Bayer Leverkusen,34.5,GBP,transfer,sky26
+Arsenal,2026/27,Summer,Christos Tzolis,Club Brugge,34,GBP,transfer,sky26
+Arsenal,2026/27,Summer,Igor Tyjon,Blackburn,,GBP,undisclosed,sky26
+Arsenal,2026/27,Summer,James Scanlon,Man United,,GBP,undisclosed,sky26
+Arsenal,2026/27,Summer,Illan Meslier,Leeds,,GBP,free,sky26
+Chelsea,2026/27,Summer,Morgan Rogers,Aston Villa,117,GBP,transfer,sky26
+Chelsea,2026/27,Summer,Maxence Lacroix,Crystal Palace,51,GBP,transfer,sky26
+Chelsea,2026/27,Summer,Geovany Quenda,Sporting CP,43.5,GBP,transfer,sky26
+Chelsea,2026/27,Summer,Marco Palestra,Atalanta,43,GBP,transfer,sky26
+Chelsea,2026/27,Summer,Pep Chavarría,Rayo Vallecano,16.3,GBP,transfer,sky26
+Chelsea,2026/27,Summer,Emiliano Martínez,Aston Villa,7.5,GBP,transfer,sky26
+Chelsea,2026/27,Summer,Dastan Satpayev,Kairat Almaty,2.1,GBP,transfer,sky26
+Chelsea,2026/27,Summer,Alfie Osborne,Hearts,0.4,GBP,transfer,sky26
+Chelsea,2026/27,Summer,Valentín Barco,Strasbourg,,GBP,undisclosed,sky26
+Chelsea,2026/27,Summer,Danny Welbeck,Brighton,,GBP,undisclosed,sky26
+Chelsea,2026/27,Summer,Emmanuel Emegha,Strasbourg,,GBP,undisclosed,sky26
+Chelsea,2026/27,Summer,Harrison Bettoni,Wigan,,GBP,undisclosed,sky26
+Chelsea,2026/27,Summer,Jordan Henderson,Brentford,,GBP,free,sky26
+Liverpool,2026/27,Summer,Bradley Barcola,PSG,123,GBP,transfer,sky26
+Liverpool,2026/27,Summer,Jérémy Jacquet,Rennes,60,GBP,transfer,sky26
+Liverpool,2026/27,Summer,Víctor Muñoz,Osasuna,34.5,GBP,transfer,sky26
+Liverpool,2026/27,Summer,Lucca Brughmans,Genk,30,GBP,transfer,sky26
+Liverpool,2026/27,Summer,Ronald Araújo,Barcelona,,GBP,loan,sky26
+Man City,2026/27,Summer,Enzo Fernández,Chelsea,125,GBP,transfer,sky26
+Man City,2026/27,Summer,Elliot Anderson,Nottingham Forest,116,GBP,transfer,sky26
+Man City,2026/27,Summer,Ayyoub Bouaddi,Lille,86,GBP,transfer,sky26
+Man City,2026/27,Summer,Iliman Ndiaye,Everton,65,GBP,transfer,sky26
+Man City,2026/27,Summer,Allan Elias,Palmeiras,34,GBP,transfer,sky26
+Man City,2026/27,Summer,Mathys Detourbet,Troyes,21.4,GBP,transfer,nb26
+Man City,2026/27,Summer,Jeremy Monga,Leicester,10,GBP,transfer,sky26
+Man City,2026/27,Summer,Pierce Charles,Sheffield Wednesday,3,GBP,transfer,sky26
+Man City,2026/27,Summer,Gerónimo Rulli,Marseille,1.7,GBP,transfer,sky26
+Man United,2026/27,Summer,Carlos Baleba,Brighton,70,GBP,transfer,sky26
+Man United,2026/27,Summer,Andrey Santos,Chelsea,50,GBP,transfer,sky26
+Man United,2026/27,Summer,Youri Tielemans,Aston Villa,35,GBP,transfer,sky26
+Man United,2026/27,Summer,Tynan Thompson,Tottenham,8,GBP,transfer,sky26
+Man United,2026/27,Summer,Cristian Orozco,Fortaleza,,GBP,undisclosed,sky26
+Man United,2026/27,Summer,Kit Margetson,Swansea,,GBP,undisclosed,sky26
+Man United,2026/27,Summer,Karl Darlow,Leeds,,GBP,free,sky26
+Tottenham,2026/27,Summer,Sandro Tonali,Newcastle,100,GBP,transfer,sky26
+Tottenham,2026/27,Summer,Savinho,Man City,85,GBP,transfer,sky26
+Tottenham,2026/27,Summer,Mateus Fernandes,West Ham,85,GBP,transfer,sky26
+Tottenham,2026/27,Summer,Jan Paul van Hecke,Brighton,52,GBP,transfer,sky26
+Tottenham,2026/27,Summer,Tosin Adarabioyo,Chelsea,10,GBP,transfer,sky26
+Tottenham,2026/27,Summer,Mykhailo Mudryk,Chelsea,,GBP,loan,sky26
+Tottenham,2026/27,Summer,Omar Marmoush,Man City,,GBP,loan,sky26
+Tottenham,2026/27,Summer,Martin Dúbravka,Burnley,,GBP,free,sky26
+Tottenham,2026/27,Summer,Andy Robertson,Liverpool,,GBP,free,sky26
+Tottenham,2026/27,Summer,Marcos Senesi,Bournemouth,,GBP,free,sky26
+Tottenham,2026/27,Summer,Cole Ramsey,Aston Villa,,GBP,free,sky26

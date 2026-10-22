@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Big Six Transfer Spend &amp; Finances, 2009/10 to 2026 — Dashboard</title>
+<meta name="description" content="Transfer spend, player sales, wages, trophies and revenue for the Premier League's Big Six since 2009/10, the first season of the charges against Manchester City. Real public data from Transfermarkt, press reports and club accounts." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="stylesheet" href="assets/big6.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230E6B5C'/><text x='16' y='21' font-family='monospace' font-size='12' fill='white' text-anchor='middle'>B6</text></svg>" />
+</head>
+<body class="dash-body">
+
+<div class="dash-top">
+  <div class="wrap">
+    <div class="row1">
+      <div class="dash-title">
+        <a href="index.html" class="mono" style="font-size:12px; color:var(--muted);">← Portfolio</a>
+        <h1>Big Six transfer spend &amp; finances</h1>
+        <span class="pill pill-good bx-real">Real public data</span>
+        <span class="asof" id="asOf">2009/10 to summer 2026</span>
+      </div>
+      <div class="dash-actions">
+        <a class="btn btn-ghost" style="padding:7px 12px; font-size:13px;" href="https://github.com/FrankJR11/analytics-portfolio/tree/main/pipeline/big6" target="_blank" rel="noopener">Pipeline &amp; method ↗</a>
+      </div>
+    </div>
+    <div class="bx-tabs-bar">
+      <nav class="bx-tabs" role="tablist" aria-label="Dashboard pages">
+          <button class="bx-tab" role="tab" id="tab-spend" data-page="spend" aria-controls="spend" aria-selected="true">Transfer spend</button>
+          <button class="bx-tab" role="tab" id="tab-seasons" data-page="seasons" aria-controls="seasons" aria-selected="false">Seasons, trophies and revenue</button>
+          <button class="bx-tab" role="tab" id="tab-wages" data-page="wages" aria-controls="wages" aria-selected="false">Wages and managers</button>
+          <button class="bx-tab" role="tab" id="tab-sales" data-page="sales" aria-controls="sales" aria-selected="false">Sales and profit</button>
+        </nav>
+    </div>
+  </div>
+</div>
+
+<main class="dash-main">
+  <div class="wrap" id="dash-root">
+    <div class="bx">
+  
+      <div class="bx-page" id="spend" role="tabpanel" aria-labelledby="tab-spend">
+      <header class="bx-head" id="top">
+        <h2 class="bx-page-title">Big Six transfer spend since the charges began</h2>
+        <p class="bx-take" id="takeaway">
+          Manchester City spent <span class="bx-em dash-skeleton" id="tk-city-total" data-source="club_totals" data-where="club=Man City" data-field="total_eur">—</span>
+          on incoming players from 2009/10 to summer 2026, ranking
+          <span class="bx-em dash-skeleton" id="tk-city-rank" data-source="club_totals" data-where="club=Man City" data-field="total_rank">—</span>
+          of the Big Six<span id="tk-leader-wrap">, behind <span class="bx-em dash-skeleton" id="tk-leader" data-source="club_totals" data-where="club=Chelsea" data-field="club">—</span>
+          (<span class="bx-em dash-skeleton" id="tk-leader-total" data-source="club_totals" data-where="club=Chelsea" data-field="total_eur">—</span>)</span>.
+          In the nine seasons the charges cover (2009/10 to 2017/18) City spent
+          <span class="bx-em dash-skeleton" id="tk-city-charged" data-source="club_totals" data-where="club=Man City" data-field="charged_eur">—</span>,
+          ranking <span class="bx-em dash-skeleton" id="tk-city-crank" data-source="club_totals" data-where="club=Man City" data-field="charged_rank">—</span>
+          of the six in that period.
+        </p>
+      </header>
+
+      <section class="bx-kpis" id="kpis" aria-label="Manchester City headline figures">
+        <div class="bx-card">
+          <div class="bx-kpi-label">Man City total spend, 2009/10 to summer 2026</div>
+          <span class="bx-kpi-value dash-skeleton" id="kpi-total" data-source="club_totals" data-where="club=Man City" data-field="total_eur">—</span>
+          <div class="bx-kpi-sub">Gross fees, before any sales</div>
+        </div>
+        <div class="bx-card">
+          <div class="bx-kpi-label">Spend in the charged seasons, 2009/10 to 2017/18</div>
+          <span class="bx-kpi-value dash-skeleton" id="kpi-charged" data-source="club_totals" data-where="club=Man City" data-field="charged_eur">—</span>
+          <div class="bx-kpi-sub">Since 2018/19: <span id="kpi-since" data-source="club_totals" data-where="club=Man City" data-field="since_eur">—</span></div>
+        </div>
+        <div class="bx-card">
+          <div class="bx-kpi-label">City's biggest season</div>
+          <span class="bx-kpi-value dash-skeleton" id="kpi-best" data-source="club_totals" data-where="club=Man City" data-field="best_season_eur">—</span>
+          <div class="bx-kpi-sub"><span id="kpi-best-season" data-source="club_totals" data-where="club=Man City" data-field="best_season">—</span></div>
+        </div>
+        <div class="bx-card">
+          <div class="bx-kpi-label">City incoming players and loans</div>
+          <span class="bx-kpi-value dash-skeleton" id="kpi-moves" data-source="club_totals" data-where="club=Man City" data-field="signings">—</span>
+          <div class="bx-kpi-sub"><span id="kpi-paid" data-source="club_totals" data-where="club=Man City" data-field="paid_signings">—</span> with a fee paid</div>
+        </div>
+      </section>
+
+      <section class="bx-card" id="trend">
+        <h2>Spend per season</h2>
+        <p class="bx-note">Gross fees for incoming players, € millions. The shaded seasons are the ones the Premier League's charges cover. 2026/27 is the summer 2026 window only. Click a club to pick it out.</p>
+        <div class="bx-legend" id="trend-legend" role="group" aria-label="Clubs"></div>
+        <div class="bx-chart" id="trend-chart" data-source="totals"></div>
+      </section>
+
+      <section class="bx-card" id="ranking">
+        <h2>Total spend by club</h2>
+        <p class="bx-note">All seasons, split at the end of the charged period.</p>
+        <div class="bx-legend" id="rank-legend"></div>
+        <div class="bx-rank" id="rank-chart" data-source="club_totals"></div>
+      </section>
+
+      <section class="bx-card" id="matrix">
+        <h2>Spend per season, every club</h2>
+        <p class="bx-note">€ millions. Darker cells mean a bigger season.</p>
+        <div class="bx-scroll">
+          <table class="bx-table" id="matrix-table" data-source="season_matrix" data-row-key="season">
+            <thead><tr id="matrix-head"></tr></thead>
+            <tbody id="matrix-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="bx-card" id="signings">
+        <h2>Every incoming player</h2>
+        <p class="bx-note">Transfers, loans and free signings. Loan returns and academy promotions are left out. Click a column to sort.</p>
+        <div class="bx-controls">
+          <select id="club-pick" aria-label="Club"></select>
+          <input type="search" id="sign-search" placeholder="Search player or club" aria-label="Search players">
+          <label class="bx-check"><input type="checkbox" id="paid-only"> Fee paid only</label>
+        </div>
+        <p class="bx-sum" id="sign-sum">
+          <span class="bx-em" id="sum-club" data-source="club_totals" data-where="club=Man City" data-field="club">—</span>:
+          <span class="bx-em" id="sum-moves" data-source="club_totals" data-where="club=Man City" data-field="signings">—</span> moves,
+          <span class="bx-em" id="sum-total" data-source="club_totals" data-where="club=Man City" data-field="total_eur">—</span> in fees.
+        </p>
+        <div class="bx-scroll">
+          <table class="bx-table" id="sign-table" data-source="signings" data-row-key="id">
+            <thead>
+              <tr>
+                <th data-field="season"><button class="bx-sort" data-k="season">Season</button></th>
+                <th data-field="window"><button class="bx-sort" data-k="window">Window</button></th>
+                <th data-field="player"><button class="bx-sort" data-k="player">Player</button></th>
+                <th data-field="from"><button class="bx-sort" data-k="from">From</button></th>
+                <th data-field="type"><button class="bx-sort" data-k="type">Type</button></th>
+                <th data-field="fee_eur" class="bx-num"><button class="bx-sort" data-k="fee_eur">Fee (€m)</button></th>
+                <th data-field="fee_gbp_reported" class="bx-num"><button class="bx-sort" data-k="fee_gbp_reported">Reported (£m)</button></th>
+                <th data-source="signing_src" data-field="source"><button class="bx-sort" data-k="source">Source</button></th>
+              </tr>
+            </thead>
+            <tbody id="sign-body"></tbody>
+          </table>
+          <p class="bx-note" id="sign-empty" hidden>No players match.</p>
+        </div>
+      </section>
+
+      <section class="bx-grid2" id="sources">
+        <div class="bx-card">
+          <h2>Where the fees come from</h2>
+          <p class="bx-note">One source per window, used for all six clubs so the years compare fairly.</p>
+          <table class="bx-table" id="src-table" data-source="source_list" data-row-key="key">
+            <thead><tr><th data-field="name">Source</th><th data-field="covers">Covers</th></tr></thead>
+            <tbody id="src-body"></tbody>
+          </table>
+        </div>
+        <div class="bx-card">
+          <h2>How the totals are worked out</h2>
+          <ul class="bx-method">
+            <li>Spend is the sum of transfer and loan fees for incoming players. Free signings, undisclosed fees, loan returns and academy promotions add nothing.</li>
+            <li>2009/10 to 2022/23 fees are Transfermarkt's, in euros. Later seasons use fees reported in the press, mostly in pounds and often including potential add-ons, converted at the yearly average rate below. January 2026 fees were reported in euros.</li>
+            <li>A season is a summer window plus the January after it. Deals agreed early and completed later, such as Echeverri, Páez, Mamardashvili and Estêvão, count when the player arrived.</li>
+            <li>These are gross figures: money from sales is not taken off.</li>
+          </ul>
+          <table class="bx-table" id="fx-table" data-source="fx" data-row-key="year" style="margin-top: var(--cds-gap-md)">
+            <thead><tr><th data-field="year">Year</th><th data-field="gbp_to_eur" class="bx-num">£1 in €</th></tr></thead>
+            <tbody id="fx-body"></tbody>
+          </table>
+        </div>
+      </section>
+      </div>
+
+      <div class="bx-page" id="seasons" role="tabpanel" aria-labelledby="tab-seasons" hidden>
+        <header class="bx-head" id="seasons-top">
+          <h2 class="bx-page-title">Manchester City, season by season</h2>
+          <p class="bx-take" id="s-takeaway">
+            From <span class="bx-em" id="st-first" data-source="city_headline" data-row="0" data-field="first_season">—</span>
+            to <span class="bx-em" id="st-last" data-source="city_headline" data-row="0" data-field="last_season">—</span>
+            City played <span class="bx-em dash-skeleton" id="st-games" data-source="city_headline" data-row="0" data-field="games">—</span> competitive games and won
+            <span class="bx-em dash-skeleton" id="st-trophies" data-source="city_headline" data-row="0" data-field="trophies">—</span> trophies,
+            <span class="bx-em dash-skeleton" id="st-titles" data-source="city_headline" data-row="0" data-field="league_titles">—</span> of them Premier League titles.
+            Revenue grew from <span class="bx-em dash-skeleton" id="st-rev-first" data-source="city_headline" data-row="0" data-field="first_revenue_eur">—</span>
+            in <span id="st-rev-first-season" data-source="city_headline" data-row="0" data-field="first_rev_season">—</span>
+            to <span class="bx-em dash-skeleton" id="st-rev-last" data-source="city_headline" data-row="0" data-field="latest_revenue_eur">—</span>
+            in <span id="st-rev-last-season" data-source="city_headline" data-row="0" data-field="latest_rev_season">—</span>,
+            when TV and prize money brought in <span class="bx-em" id="st-bshare" data-source="city_headline" data-row="0" data-field="latest_broadcast_share">—</span>
+            and matchday tickets and hospitality <span class="bx-em" id="st-mshare" data-source="city_headline" data-row="0" data-field="latest_matchday_share">—</span>.
+          </p>
+        </header>
+
+        <section class="bx-kpis" id="season-kpis" aria-label="City season headline figures">
+          <div class="bx-card">
+            <div class="bx-kpi-label">Trophies won since 2009/10</div>
+            <span class="bx-kpi-value dash-skeleton" id="sk-trophies" data-source="city_headline" data-row="0" data-field="trophies">—</span>
+            <div class="bx-kpi-sub"><span id="sk-titles" data-source="city_headline" data-row="0" data-field="league_titles">—</span> Premier League titles</div>
+          </div>
+          <div class="bx-card">
+            <div class="bx-kpi-label">Competitive games played</div>
+            <span class="bx-kpi-value dash-skeleton" id="sk-games" data-source="city_headline" data-row="0" data-field="games">—</span>
+            <div class="bx-kpi-sub">Completed seasons, all competitions</div>
+          </div>
+          <div class="bx-card">
+            <div class="bx-kpi-label">Revenue, latest published season</div>
+            <span class="bx-kpi-value dash-skeleton" id="sk-rev" data-source="city_headline" data-row="0" data-field="latest_revenue_eur">—</span>
+            <div class="bx-kpi-sub"><span id="sk-rev-season" data-source="city_headline" data-row="0" data-field="latest_rev_season">—</span>, Deloitte basis</div>
+          </div>
+          <div class="bx-card">
+            <div class="bx-kpi-label">Matchday revenue per game played</div>
+            <span class="bx-kpi-value dash-skeleton" id="sk-mpg" data-source="city_headline" data-row="0" data-field="latest_matchday_per_game_eur">—</span>
+            <div class="bx-kpi-sub">Same season, home and away games averaged</div>
+          </div>
+        </section>
+
+        <section class="bx-card" id="revenue">
+          <h2>Revenue by stream, with transfer spend</h2>
+          <p class="bx-note">€ millions per season. Matchday is tickets and hospitality, broadcasting is TV rights and prize money, commercial is sponsorship and merchandise. The line is City's gross transfer spend in the same season. 2025/26 accounts are not published yet.</p>
+          <div class="bx-legend" id="rev-legend"></div>
+          <div class="bx-rev" id="rev-chart" data-source="city_revenue totals"></div>
+        </section>
+
+        <section class="bx-card" id="games">
+          <h2>Games played and trophies won, Big Six</h2>
+          <p class="bx-note">Competitive games per season by competition, all six clubs on one shared scale. The number above a bar is trophies won that season. 2026/27 shows games played up to 16 October. Games under each club's name count completed seasons; trophies include 2026/27 so far.</p>
+          <div class="bx-legend" id="games-legend"></div>
+          <div class="bx-mgrid" id="games-grid" data-source="competitions"></div>
+        </section>
+
+        <section class="bx-card" id="standings">
+          <h2>Premier League position, Big Six</h2>
+          <p class="bx-note">Final league position each season; 1st is at the top and the shaded band is the Champions League places. 2026/27 is the table after six games. Click a club to pick it out.</p>
+          <div class="bx-legend" id="bump-legend" role="group" aria-label="Clubs"></div>
+          <div class="bx-bump" id="bump-chart" data-source="league_positions"></div>
+        </section>
+
+        <section class="bx-card" id="season-table-card">
+          <h2>City season summary</h2>
+          <p class="bx-note">Revenue figures are € millions. Per-game figures divide each stream by every competitive game that season, so they are rough averages. 2026/27 is in progress.</p>
+          <div class="bx-scroll">
+            <table class="bx-table" id="season-table" data-source="city_season_summary" data-row-key="season">
+              <thead><tr>
+                <th data-field="season">Season</th>
+                <th data-field="league_position" class="bx-num">League pos.</th>
+                <th data-field="games" class="bx-num">Games</th>
+                <th data-field="trophies" class="bx-num">Trophies</th>
+                <th data-field="trophies_won">Won</th>
+                <th data-field="matchday" class="bx-num">Matchday</th>
+                <th data-field="broadcasting" class="bx-num">Broadcasting</th>
+                <th data-field="commercial" class="bx-num">Commercial</th>
+                <th data-field="revenue" class="bx-num">Revenue</th>
+                <th data-field="matchday_per_game" class="bx-num">Matchday per game</th>
+                <th data-field="broadcasting_per_game" class="bx-num">Broadcasting per game</th>
+                <th data-field="transfer_spend" class="bx-num">Transfer spend</th>
+                <th data-field="spend_share" class="bx-num">Spend ÷ revenue</th>
+              </tr></thead>
+              <tbody id="season-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="bx-card" id="competitions">
+          <h2>Every competition, every season</h2>
+          <p class="bx-note">How far each club went in each competition and how many games it took.</p>
+          <div class="bx-controls">
+            <select id="comp-club" aria-label="Club"></select>
+            <label class="bx-check"><input type="checkbox" id="won-only"> Trophies won only</label>
+          </div>
+          <div class="bx-scroll">
+            <table class="bx-table" id="comp-table" data-source="competitions" data-row-key="id">
+              <thead><tr>
+                <th data-field="season">Season</th>
+                <th data-field="competition">Competition</th>
+                <th data-field="stage">Result</th>
+                <th data-field="games" class="bx-num">Games</th>
+                <th data-field="won">Won</th>
+              </tr></thead>
+              <tbody id="comp-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="bx-grid2" id="season-sources">
+          <div class="bx-card">
+            <h2>Where these figures come from</h2>
+            <table class="bx-table" id="ssrc-table" data-source="season_sources" data-row-key="key">
+              <thead><tr><th data-field="name">Source</th><th data-field="covers">Covers</th></tr></thead>
+              <tbody id="ssrc-body"></tbody>
+            </table>
+          </div>
+          <div class="bx-card">
+            <h2>How to read them</h2>
+            <ul class="bx-method">
+              <li>Games are competitive matches only: league, domestic cups (including replays and two-legged semi-finals), the Community Shield, and European and world club competitions. Friendlies and matches awarded without being played are left out. 2026/27 counts games up to 16 October 2026.</li>
+              <li>A season runs from the Community Shield in August to the end of May; the summer Club World Cup counts in the season before it.</li>
+              <li>Revenue follows City's financial year, which ended on 31 May until 2015/16 and on 30 June after that. Deloitte restated the 13-month 2016/17 period to 12 months.</li>
+              <li>Deloitte's figures cover 2009/10 to 2022/23. For 2023/24 and 2024/25 the split comes from City's own accounts, scaled to match Deloitte's euro total. City's 2025/26 accounts are not out yet.</li>
+              <li>Broadcasting includes Premier League TV money and UEFA prize money; it is not only the TV rights deal itself.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="bx-page" id="wages" role="tabpanel" aria-labelledby="tab-wages" hidden>
+        <header class="bx-head" id="wages-top">
+          <h2 class="bx-page-title">Wages and managers' pay</h2>
+          <p class="bx-take" id="w-takeaway">
+            City's wage bill grew from <span class="bx-em dash-skeleton" id="wt-first" data-source="wage_headline" data-row="0" data-field="city_first_wages">—</span>
+            in <span id="wt-first-season" data-source="wage_headline" data-row="0" data-field="first_season">—</span>
+            to <span class="bx-em dash-skeleton" id="wt-last" data-source="wage_headline" data-row="0" data-field="city_latest_wages">—</span>
+            in <span id="wt-last-season" data-source="wage_headline" data-row="0" data-field="latest_season">—</span>,
+            <span class="bx-em" id="wt-mult" data-source="wage_headline" data-row="0" data-field="growth_multiple">—</span> times as much,
+            ranking <span class="bx-em" id="wt-rank" data-source="wage_headline" data-row="0" data-field="city_rank">—</span>
+            of the <span id="wt-n" data-source="wage_headline" data-row="0" data-field="clubs_reported">—</span> clubs with published figures that season.
+            Its best-paid player in <span id="wt-top-season" data-source="wage_headline" data-row="0" data-field="top_season">—</span> is
+            <span class="bx-em" id="wt-top" data-source="wage_headline" data-row="0" data-field="top_player">—</span> at
+            <span class="bx-em" id="wt-top-w" data-source="wage_headline" data-row="0" data-field="top_weekly">—</span> a week, and manager
+            <span class="bx-em" id="wt-mgr" data-source="wage_headline" data-row="0" data-field="manager">—</span> is reported at
+            <span class="bx-em" id="wt-mgr-pay" data-source="wage_headline" data-row="0" data-field="manager_pay">—</span> a year.
+          </p>
+        </header>
+
+        <section class="bx-kpis" id="wage-kpis" aria-label="City wage headline figures">
+          <div class="bx-card">
+            <div class="bx-kpi-label">City wage bill, latest accounts</div>
+            <span class="bx-kpi-value dash-skeleton" id="wk-bill" data-source="wage_headline" data-row="0" data-field="city_latest_wages">—</span>
+            <div class="bx-kpi-sub"><span id="wk-bill-season" data-source="wage_headline" data-row="0" data-field="latest_season">—</span>, all staff</div>
+          </div>
+          <div class="bx-card">
+            <div class="bx-kpi-label">Wages as a share of City's revenue</div>
+            <span class="bx-kpi-value dash-skeleton" id="wk-ratio" data-source="wage_headline" data-row="0" data-field="city_ratio">—</span>
+            <div class="bx-kpi-sub">Same season</div>
+          </div>
+          <div class="bx-card">
+            <div class="bx-kpi-label">City's best-paid player now</div>
+            <span class="bx-kpi-value dash-skeleton" id="wk-top" data-source="wage_headline" data-row="0" data-field="top_weekly">—</span>
+            <div class="bx-kpi-sub"><span id="wk-top-name" data-source="wage_headline" data-row="0" data-field="top_player">—</span> a week, about <span id="wk-top-year" data-source="wage_headline" data-row="0" data-field="top_annual">—</span> a year</div>
+          </div>
+          <div class="bx-card">
+            <div class="bx-kpi-label">City manager's reported pay</div>
+            <span class="bx-kpi-value dash-skeleton" id="wk-mgr" data-source="wage_headline" data-row="0" data-field="manager_pay">—</span>
+            <div class="bx-kpi-sub"><span id="wk-mgr-name" data-source="wage_headline" data-row="0" data-field="manager">—</span>, a year</div>
+          </div>
+        </section>
+
+        <section class="bx-card" id="wage-bills">
+          <h2>Wage bill per season</h2>
+          <p class="bx-note">Total staff costs from each club's accounts, £ millions. This is everyone the club pays, not only players. Hover for each club's wages as a share of its revenue where both are published. Click a club to pick it out.</p>
+          <div class="bx-legend" id="wage-legend" role="group" aria-label="Clubs"></div>
+          <div class="bx-wline" id="wage-chart" data-source="wages"></div>
+        </section>
+
+        <section class="bx-card" id="wage-grid-card">
+          <h2>Wage bill per season, every club</h2>
+          <p class="bx-note">£ millions. Darker cells mean a bigger bill. A dash means the figure was not found or not published.</p>
+          <div class="bx-scroll">
+            <table class="bx-table" id="wage-grid" data-source="wage_matrix" data-row-key="season">
+              <thead><tr id="wage-grid-head"></tr></thead>
+              <tbody id="wage-grid-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="bx-card" id="top-paid">
+          <h2>Best-paid player at each club</h2>
+          <p class="bx-note">Highest reported weekly wage each season, £ thousands. Player wages are estimates, not published by the clubs. City's 2009/10 and 2010/11 come from a July 2010 report; the other clubs start in 2013/14, Liverpool in 2016/17. Tottenham's 2020/21 peak is Gareth Bale's £600k, which includes the share Real Madrid paid during his loan.</p>
+          <div class="bx-legend" id="toppaid-legend"></div>
+          <div class="bx-tpline" id="toppaid-chart" data-source="top_paid_by_club"></div>
+        </section>
+
+        <section class="bx-card" id="earners">
+          <h2>Top five earners each season</h2>
+          <p class="bx-note">Weekly wages before tax. Players tied on the fifth wage are listed together. City 2011/12 and 2012/13 are missing: no consistent list was found.</p>
+          <div class="bx-controls">
+            <select id="earn-club" aria-label="Club"></select>
+          </div>
+          <div class="bx-scroll">
+            <table class="bx-table" id="earners-table" data-source="earners_grid" data-row-key="key">
+              <thead><tr>
+                <th data-field="season" class="bx-nowrap">Season</th>
+                <th data-field="p1">1st</th>
+                <th data-field="p2">2nd</th>
+                <th data-field="p3">3rd</th>
+                <th data-field="p4">4th</th>
+                <th data-field="p5">5th</th>
+              </tr></thead>
+              <tbody id="earners-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="bx-card" id="managers">
+          <h2>Managers since 2009</h2>
+          <p class="bx-note">Each bar is one manager's spell. Stronger colour means higher reported pay; an outlined bar means no figure was found. Short caretaker spells are left out. Hover for the reported figures.</p>
+          <div class="bx-timeline" id="mgr-timeline" data-source="manager_summary"></div>
+        </section>
+
+        <section class="bx-card" id="manager-pay">
+          <h2>Managers' reported pay</h2>
+          <p class="bx-note">Annual pay as reported in the press. Clubs do not publish it, so figures vary by source and some include bonuses. Euro figures from France Football are converted at that year's average rate.</p>
+          <div class="bx-controls">
+            <select id="mgr-club" aria-label="Club"></select>
+          </div>
+          <div class="bx-scroll">
+            <table class="bx-table" id="mgr-table" data-source="manager_summary" data-row-key="id">
+              <thead><tr>
+                <th data-field="club" class="bx-nowrap">Club</th>
+                <th data-field="manager" class="bx-nowrap">Manager</th>
+                <th data-field="from_label" class="bx-nowrap">From</th>
+                <th data-field="to_label" class="bx-nowrap">To</th>
+                <th data-field="role">Role</th>
+                <th data-field="top_pay_gbp_m" class="bx-num bx-nowrap">Highest reported (£m/yr)</th>
+                <th data-field="reports">Reported pay (year)</th>
+              </tr></thead>
+              <tbody id="mgr-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="bx-grid2" id="wage-sources">
+          <div class="bx-card">
+            <h2>Where these figures come from</h2>
+            <div class="bx-scroll" style="max-height: 24rem">
+              <table class="bx-table" id="wsrc-table" data-source="wage_sources" data-row-key="key">
+                <thead><tr><th data-field="name">Source</th><th data-field="covers">Covers</th></tr></thead>
+                <tbody id="wsrc-body"></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="bx-card">
+            <h2>How to read them</h2>
+            <ul class="bx-method">
+              <li>Wage bills are total staff costs from each club's published accounts, in pounds, for the financial year that ends in the summer of the season shown. They include coaches and office staff, bonuses and pay-offs, not only players.</li>
+              <li>Different years come from different summaries of the same accounts, so small differences between sources (a few £m) are possible. City 2016/17 covers 13 months and Liverpool 2011/12 covers 10 months.</li>
+              <li>Not found: Tottenham 2009/10 and 2012/13. Chelsea's 2024/25 accounts do not separate staff costs. 2025/26 is not included because most clubs publish those accounts between November and March.</li>
+              <li>Player wages are estimates from salary-tracking sites (SalaryLeaks, which follows Capology) and press reports. They are basic weekly pay before tax and leave out bonuses and image rights.</li>
+              <li>Manager pay is press-reported and mixes bases: some figures are basic salary, France Football's include bonuses, and one (Moyes) is a contract value divided by its length.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="bx-page" id="sales" role="tabpanel" aria-labelledby="tab-sales" hidden>
+        <header class="bx-head" id="sales-top">
+          <h2 class="bx-page-title">Player sales and profit since 2009/10</h2>
+          <p class="bx-take" id="sales-takeaway">
+            Manchester City raised <span class="bx-em dash-skeleton" id="st-sales" data-source="sales_club_totals" data-where="club=Man City" data-field="sales_eur">—</span>
+            from selling players between 2009/10 and summer 2026, ranking
+            <span class="bx-em dash-skeleton" id="st-rank" data-source="sales_club_totals" data-where="club=Man City" data-field="sales_rank">—</span>
+            of the Big Six<span id="st-leader-wrap">, behind <span class="bx-em dash-skeleton" id="st-leader" data-source="sales_club_totals" data-where="club=Chelsea" data-field="club">—</span>
+            (<span class="bx-em dash-skeleton" id="st-leader-sales" data-source="sales_club_totals" data-where="club=Chelsea" data-field="sales_eur">—</span>)</span>.
+            Taken off its <span class="bx-em dash-skeleton" id="st-spend" data-source="sales_club_totals" data-where="club=Man City" data-field="spend_eur">—</span> of spending,
+            that leaves a net spend of <span class="bx-em dash-skeleton" id="st-net" data-source="sales_club_totals" data-where="club=Man City" data-field="net_eur">—</span>,
+            ranking <span class="bx-em" id="st-net-rank" data-source="sales_club_totals" data-where="club=Man City" data-field="net_rank">—</span> of the six.
+            <span class="bx-em" id="st-since" data-source="sales_club_totals" data-where="club=Man City" data-field="since_share">—</span> of City's sale money came after 2017/18,
+            and academy graduates brought in <span class="bx-em" id="st-academy" data-source="sales_club_totals" data-where="club=Man City" data-field="academy_eur">—</span>.
+          </p>
+        </header>
+
+        <section class="bx-kpis" id="sales-kpis" aria-label="City sales headline figures">
+          <div class="bx-card">
+            <div class="bx-kpi-label">Man City sale income, 2009/10 to summer 2026</div>
+            <span class="bx-kpi-value dash-skeleton" id="sk-sales" data-source="sales_club_totals" data-where="club=Man City" data-field="sales_eur">—</span>
+            <div class="bx-kpi-sub"><span id="sk-sold" data-source="sales_club_totals" data-where="club=Man City" data-field="sold_count">—</span> players sold for a fee</div>
+          </div>
+          <div class="bx-card">
+            <div class="bx-kpi-label">City net spend (spend minus sales)</div>
+            <span class="bx-kpi-value dash-skeleton" id="sk-net" data-source="sales_club_totals" data-where="club=Man City" data-field="net_eur">—</span>
+            <div class="bx-kpi-sub">Sales covered <span id="sk-recouped" data-source="sales_club_totals" data-where="club=Man City" data-field="recouped">—</span> of spend</div>
+          </div>
+          <div class="bx-card">
+            <div class="bx-kpi-label">City academy graduates sold</div>
+            <span class="bx-kpi-value dash-skeleton" id="sk-academy" data-source="sales_club_totals" data-where="club=Man City" data-field="academy_eur">—</span>
+            <div class="bx-kpi-sub"><span id="sk-academy-n" data-source="sales_club_totals" data-where="club=Man City" data-field="academy_count">—</span> players, all fee counted as gain</div>
+          </div>
+          <div class="bx-card">
+            <div class="bx-kpi-label">City's biggest sale</div>
+            <span class="bx-kpi-value dash-skeleton" id="sk-big" data-source="sales_club_totals" data-where="club=Man City" data-field="biggest_fee_eur">—</span>
+            <div class="bx-kpi-sub"><span id="sk-big-player" data-source="sales_club_totals" data-where="club=Man City" data-field="biggest_player">—</span> to <span id="sk-big-to" data-source="sales_club_totals" data-where="club=Man City" data-field="biggest_to">—</span>, <span id="sk-big-season" data-source="sales_club_totals" data-where="club=Man City" data-field="biggest_season">—</span></div>
+          </div>
+        </section>
+
+        <section class="bx-card" id="sale-income">
+          <h2>Sale income per season</h2>
+          <p class="bx-note">Transfer and loan fees received for outgoing players, € millions. 2026/27 is the summer 2026 window only. Hover for the number of paid sales; click a club to pick it out.</p>
+          <div class="bx-legend" id="sales-legend" role="group" aria-label="Clubs"></div>
+          <div class="bx-sline" id="sales-chart" data-source="sales_totals"></div>
+        </section>
+
+        <section class="bx-card" id="net-spend">
+          <h2>How much of the spending sales paid for</h2>
+          <p class="bx-note">All seasons, 2009/10 to summer 2026. Each bar is a club's total spend; the coloured part is what it got back from sales, and the grey part is net spend. Ordered by net spend.</p>
+          <div class="bx-legend" id="net-legend"></div>
+          <div class="bx-nbar" id="net-chart" data-source="sales_club_totals"></div>
+        </section>
+
+        <section class="bx-card" id="sales-grid-card">
+          <h2>Sales and net spend per season, every club</h2>
+          <p class="bx-note">€ millions. Net spend is spend minus sales, so a negative number means the club took in more than it spent that season.</p>
+          <div class="bx-controls">
+            <select id="sgrid-metric" aria-label="Figure to show">
+              <option value="net">Net spend</option>
+              <option value="sales">Sale income</option>
+            </select>
+            <div class="bx-legend" id="sgrid-legend" style="margin: 0"></div>
+          </div>
+          <div class="bx-scroll">
+            <table class="bx-table" id="sales-grid" data-source="sales_matrix" data-row-key="key">
+              <thead><tr id="sgrid-head"></tr></thead>
+              <tbody id="sgrid-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="bx-card" id="fee-gain">
+          <h2>Profit on the players sold</h2>
+          <p class="bx-note">Sale fee minus what the club paid for the same player, added up over every permanent sale since 2009/10. Academy graduates cost nothing, so their whole fee counts. The tick and label show the net result. Sales where the purchase fee was undisclosed are left out.</p>
+          <div class="bx-legend" id="gain-legend"></div>
+          <div class="bx-gbar" id="gain-chart" data-source="sales_club_totals"></div>
+        </section>
+
+        <section class="bx-card" id="accounts-profit">
+          <h2>Profit on player sales in the club accounts</h2>
+          <p class="bx-note">"Profit on disposal of players" from each club's accounts, £ millions, for the financial year ending in the summer of the season shown. This is the sale price minus the part of the purchase fee not yet written off, so it is higher than the fee gain above. Gaps are years not found. Click a club to pick it out.</p>
+          <div class="bx-legend" id="profit-legend" role="group" aria-label="Clubs"></div>
+          <div class="bx-pline" id="profit-chart" data-source="sales_profit"></div>
+        </section>
+
+        <section class="bx-card" id="sold-players">
+          <h2>Every player sold or loaned out</h2>
+          <p class="bx-note">Cost is the fee the club paid for the player's latest permanent signing. Gain is sale fee minus cost, for permanent sales. Click a column to sort.</p>
+          <div class="bx-controls">
+            <select id="sale-club" aria-label="Club"></select>
+            <select id="sale-origin" aria-label="How the player arrived">
+              <option value="">Any origin</option>
+              <option value="Academy">Academy</option>
+              <option value="Bought">Bought</option>
+              <option value="Free signing">Free signing</option>
+              <option value="Bought, fee undisclosed">Bought, fee undisclosed</option>
+              <option value="Loan, no permanent fee">Loan, no permanent fee</option>
+              <option value="No purchase on record">No purchase on record</option>
+            </select>
+            <input type="search" id="sale-search" placeholder="Search player or club" aria-label="Search sold players">
+            <label class="bx-check"><input type="checkbox" id="fee-only" checked> Fee received only</label>
+          </div>
+          <p class="bx-sum" id="sale-sum">
+            <span class="bx-em" id="ss-club" data-source="sales_club_totals" data-where="club=Man City" data-field="club">—</span>:
+            <span class="bx-em" id="ss-sold" data-source="sales_club_totals" data-where="club=Man City" data-field="sold_count">—</span> players sold for a fee,
+            <span class="bx-em" id="ss-sales" data-source="sales_club_totals" data-where="club=Man City" data-field="sales_eur">—</span> in sale income,
+            net fee gain <span class="bx-em" id="ss-gain" data-source="sales_club_totals" data-where="club=Man City" data-field="fee_gain_eur">—</span>.
+          </p>
+          <div class="bx-scroll">
+            <table class="bx-table" id="sale-table" data-source="sales" data-row-key="id">
+              <thead>
+                <tr>
+                  <th data-field="season"><button class="bx-sort" data-k="season">Season</button></th>
+                  <th data-field="window"><button class="bx-sort" data-k="window">Window</button></th>
+                  <th data-field="player"><button class="bx-sort" data-k="player">Player</button></th>
+                  <th data-field="to"><button class="bx-sort" data-k="to">To</button></th>
+                  <th data-field="type"><button class="bx-sort" data-k="type">Type</button></th>
+                  <th data-field="fee_eur" class="bx-num"><button class="bx-sort" data-k="fee_eur">Fee (€m)</button></th>
+                  <th data-field="fee_gbp_reported" class="bx-num"><button class="bx-sort" data-k="fee_gbp_reported">Reported (£m)</button></th>
+                  <th data-field="origin"><button class="bx-sort" data-k="origin">Arrived as</button></th>
+                  <th data-field="cost_eur" class="bx-num"><button class="bx-sort" data-k="cost_eur">Cost (€m)</button></th>
+                  <th data-field="gain_eur" class="bx-num"><button class="bx-sort" data-k="gain_eur">Gain (€m)</button></th>
+                  <th data-source="sale_src" data-field="source"><button class="bx-sort" data-k="source">Source</button></th>
+                </tr>
+              </thead>
+              <tbody id="sale-body"></tbody>
+            </table>
+            <p class="bx-note" id="sale-empty" hidden>No players match.</p>
+          </div>
+        </section>
+
+        <section class="bx-grid2" id="sales-sources">
+          <div class="bx-card">
+            <h2>Where the sales figures come from</h2>
+            <p class="bx-note">The same round-ups as the spend tab, so each sale and purchase is priced the same way.</p>
+            <div class="bx-scroll" style="max-height: 24rem">
+              <table class="bx-table" id="salesrc-table" data-source="sales_sources" data-row-key="key">
+                <thead><tr><th data-field="name">Source</th><th data-field="covers">Covers</th></tr></thead>
+                <tbody id="salesrc-body"></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="bx-card">
+            <h2>How the sales figures are worked out</h2>
+            <ul class="bx-method">
+              <li>Sale income is the sum of transfer and loan fees received. Free transfers, released players, undisclosed fees and loans without a fee add nothing.</li>
+              <li>Fees to 2022/23 are Transfermarkt's, in euros. Later fees are as reported in the press, mostly in pounds and often including potential add-ons, converted at the same yearly rates as the spend tab. January 2026 fees were reported in euros.</li>
+              <li>Net spend is the spend tab's total minus sale income for the same club and season.</li>
+              <li>Fee gain compares each permanent sale with the fee paid for that player's latest permanent signing. Academy graduates, including teenagers signed for youth-team compensation, count as costing nothing. It leaves out wages, agents' fees and sell-on clauses.</li>
+              <li>The accounts figure is a different measure: clubs spread a purchase fee over the contract, so a player bought for €60m and sold for €40m years later can still show a profit.</li>
+              <li>Before 2023/24 every loan out is listed; later round-ups list only first-team loans, so loan counts are not comparable across years. Fee totals are.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="dash-footer">
+  <div class="wrap">
+    <span>Fees: Transfermarkt (via the ewenme/transfers dataset) to 2022/23, then press-reported fees converted from pounds at yearly average rates. Wages and pay: club accounts and published estimates. Every table lists its sources.</span>
+    <span>Real public data · <span id="footGen"></span></span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="assets/big6-data.js"></script>
+<script src="assets/big6-dash.js"></script>
+<script>document.getElementById("footGen").textContent = "data as of " + ((window.BIG6_DATA || {}).as_of || "");</script>
+<script src="assets/big6-dashboard.js"></script>
+</body>
+</html>

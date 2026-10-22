@@ -1,0 +1,10 @@
+key,name,covers,url
+tm,Transfermarkt (ewenme/transfers dataset),"Sales and loans out, 2009/10 to 2022/23, fees in euros; also the purchase fees used for profit",https://github.com/ewenme/transfers
+sl23,Sporting Life: summer 2023 done deals,"Summer 2023 sales, all six clubs",https://sportinglife.com/football/news/premier-league-completed-transfers-every-first-team-done-deal-in-and-out-of-all-20-clubs-in-2023-summer-window/211847
+nbc24,NBC Sports: January 2024 done deals,January 2024 departures (no fees listed),https://www.nbcsports.com/soccer/news/premier-league-done-deals-january-window-action-for-the-wide-open-title-race-relegation-race
+f365,Football365: every summer 2024 transfer,"Summer 2024 sales, all six clubs",https://www.football365.com/news/every-premier-league-transfer-summer-2024
+m90,90min: every January 2025 transfer,"January 2025 sales, all six clubs",https://www.90min.com/premier-league-done-deals-every-january-2025-transfer
+fs25,Flashscore: 2025/26 club-by-club ins and outs,"June and summer 2025 sales, all six clubs",https://www.flashscore.com/news/soccer-premier-league-ins-and-outs-premier-league-club-by-club-transfers-for-the-2025-26-season/vHhhsYnl
+fsj26,Flashscore: January 2026 transfers and reported fees,"January 2026 sales (reported in euros), all six clubs",https://www.flashscore.com/news/soccer-premier-league-premier-league-january-transfers-all-the-purchases-loans-and-reported-fees/UDc5RleM
+sky26,Sky Sports: summer 2026 ins and outs,"Summer 2026 sales incl. potential add-ons, all six clubs",https://www.skysports.com/football/news/11095/13546618/
+ss,SalarySport club finances (from Companies House accounts),"Profit on disposal of players, each club, as far back as each page goes (2012/13 to 2024/25)",https://salarysport.com/football/premier-league/manchester-city-f.c./finances/

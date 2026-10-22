@@ -1,0 +1,468 @@
+id,club,season,competition,stage,games,won,in_progress,src
+m0001,Man City,2009/10,Premier League,5th,38,No,false,wk_s
+m0002,Man City,2009/10,FA Cup,Fifth round,4,No,false,wk_s
+m0003,Man City,2009/10,League Cup,Semi-finals,6,No,false,wk_s
+m0004,Man City,2010/11,Premier League,3rd,38,No,false,wk_s
+m0005,Man City,2010/11,FA Cup,Winners,8,Yes,false,wk_s
+m0006,Man City,2010/11,League Cup,Third round,1,No,false,wk_s
+m0007,Man City,2010/11,Europa League,Round of 16,12,No,false,wk_s
+m0008,Man City,2011/12,Premier League,1st,38,Yes,false,wk_s
+m0009,Man City,2011/12,FA Cup,Third round,1,No,false,wk_s
+m0010,Man City,2011/12,League Cup,Semi-finals,5,No,false,wk_s
+m0011,Man City,2011/12,Community Shield,Runners-up,1,No,false,wk_s
+m0012,Man City,2011/12,Champions League,Group stage,6,No,false,wk_s
+m0013,Man City,2011/12,Europa League,Round of 16,4,No,false,wk_s
+m0014,Man City,2012/13,Premier League,2nd,38,No,false,wk_s
+m0015,Man City,2012/13,FA Cup,Runners-up,6,No,false,wk_s
+m0016,Man City,2012/13,League Cup,Third round,1,No,false,wk_s
+m0017,Man City,2012/13,Community Shield,Winners,1,Yes,false,wk_s
+m0018,Man City,2012/13,Champions League,Group stage,6,No,false,wk_s
+m0019,Man City,2013/14,Premier League,1st,38,Yes,false,wk_s
+m0020,Man City,2013/14,FA Cup,Quarter-finals,5,No,false,wk_s
+m0021,Man City,2013/14,League Cup,Winners,6,Yes,false,wk_s
+m0022,Man City,2013/14,Champions League,Round of 16,8,No,false,wk_s
+m0023,Man City,2014/15,Premier League,2nd,38,No,false,wk_s
+m0024,Man City,2014/15,FA Cup,Fourth round,2,No,false,wk_s
+m0025,Man City,2014/15,League Cup,Fourth round,2,No,false,wk_s
+m0026,Man City,2014/15,Community Shield,Runners-up,1,No,false,wk_s
+m0027,Man City,2014/15,Champions League,Round of 16,8,No,false,wk_s
+m0028,Man City,2015/16,Premier League,4th,38,No,false,wk_s
+m0029,Man City,2015/16,FA Cup,Fifth round,3,No,false,wk_s
+m0030,Man City,2015/16,League Cup,Winners,6,Yes,false,wk_s
+m0031,Man City,2015/16,Champions League,Semi-finals,12,No,false,wk_s
+m0032,Man City,2016/17,Premier League,3rd,38,No,false,wk_s
+m0033,Man City,2016/17,FA Cup,Semi-finals,6,No,false,wk_s
+m0034,Man City,2016/17,League Cup,Fourth round,2,No,false,wk_s
+m0035,Man City,2016/17,Champions League,Round of 16,10,No,false,wk_s
+m0036,Man City,2017/18,Premier League,1st,38,Yes,false,wk_s
+m0037,Man City,2017/18,FA Cup,Fifth round,3,No,false,wk_s
+m0038,Man City,2017/18,League Cup,Winners,6,Yes,false,wk_s
+m0039,Man City,2017/18,Champions League,Quarter-finals,10,No,false,wk_s
+m0040,Man City,2018/19,Premier League,1st,38,Yes,false,wk_s
+m0041,Man City,2018/19,FA Cup,Winners,6,Yes,false,wk_s
+m0042,Man City,2018/19,League Cup,Winners,6,Yes,false,wk_s
+m0043,Man City,2018/19,Community Shield,Winners,1,Yes,false,wk_s
+m0044,Man City,2018/19,Champions League,Quarter-finals,10,No,false,wk_s
+m0045,Man City,2019/20,Premier League,2nd,38,No,false,wk_s
+m0046,Man City,2019/20,FA Cup,Semi-finals,5,No,false,wk_s
+m0047,Man City,2019/20,League Cup,Winners,6,Yes,false,wk_s
+m0048,Man City,2019/20,Community Shield,Winners,1,Yes,false,wk_s
+m0049,Man City,2019/20,Champions League,Quarter-finals,9,No,false,wk_s
+m0050,Man City,2020/21,Premier League,1st,38,Yes,false,wk_s
+m0051,Man City,2020/21,FA Cup,Semi-finals,5,No,false,wk_s
+m0052,Man City,2020/21,League Cup,Winners,5,Yes,false,wk_s
+m0053,Man City,2020/21,Champions League,Runners-up,13,No,false,wk_s
+m0054,Man City,2021/22,Premier League,1st,38,Yes,false,wk_s
+m0055,Man City,2021/22,FA Cup,Semi-finals,5,No,false,wk_s
+m0056,Man City,2021/22,League Cup,Fourth round,2,No,false,wk_s
+m0057,Man City,2021/22,Community Shield,Runners-up,1,No,false,wk_s
+m0058,Man City,2021/22,Champions League,Semi-finals,12,No,false,wk_s
+m0059,Man City,2022/23,Premier League,1st,38,Yes,false,wk_s
+m0060,Man City,2022/23,FA Cup,Winners,6,Yes,false,wk_s
+m0061,Man City,2022/23,League Cup,Quarter-finals,3,No,false,wk_s
+m0062,Man City,2022/23,Community Shield,Runners-up,1,No,false,wk_s
+m0063,Man City,2022/23,Champions League,Winners,13,Yes,false,wk_s
+m0064,Man City,2023/24,Premier League,1st,38,Yes,false,wk_s
+m0065,Man City,2023/24,FA Cup,Runners-up,6,No,false,wk_s
+m0066,Man City,2023/24,League Cup,Third round,1,No,false,wk_s
+m0067,Man City,2023/24,Community Shield,Runners-up,1,No,false,wk_s
+m0068,Man City,2023/24,Champions League,Quarter-finals,10,No,false,wk_s
+m0069,Man City,2023/24,UEFA Super Cup,Winners,1,Yes,false,wk_s
+m0070,Man City,2023/24,Club World Cup,Winners,2,Yes,false,wk_s
+m0071,Man City,2024/25,Premier League,3rd,38,No,false,wk_s
+m0072,Man City,2024/25,FA Cup,Runners-up,6,No,false,wk_s
+m0073,Man City,2024/25,League Cup,Fourth round,2,No,false,wk_s
+m0074,Man City,2024/25,Community Shield,Winners,1,Yes,false,wk_s
+m0075,Man City,2024/25,Champions League,Knockout play-offs,10,No,false,wk_s
+m0076,Man City,2024/25,Club World Cup,Round of 16,4,No,false,wk_s
+m0077,Man City,2025/26,Premier League,2nd,38,No,false,wk_s
+m0078,Man City,2025/26,FA Cup,Winners,6,Yes,false,wk_s
+m0079,Man City,2025/26,League Cup,Winners,6,Yes,false,wk_s
+m0080,Man City,2025/26,Champions League,Round of 16,10,No,false,wk_s
+m0081,Man City,2026/27,Community Shield,Runners-up,1,No,true,live
+m0082,Man City,2026/27,Premier League,1st after 6 games,6,No,true,live
+m0083,Man City,2026/27,League Cup,Into fourth round,1,No,true,live
+m0084,Man City,2026/27,Champions League,"League phase, 2 of 8 played",2,No,true,live
+m0085,Arsenal,2009/10,Premier League,3rd,38,No,false,wk_s
+m0086,Arsenal,2009/10,FA Cup,Fourth round,2,No,false,wk_s
+m0087,Arsenal,2009/10,League Cup,Quarter-finals,3,No,false,wk_s
+m0088,Arsenal,2009/10,Champions League,Quarter-finals,12,No,false,wk_s
+m0089,Arsenal,2010/11,Premier League,4th,38,No,false,wk_s
+m0090,Arsenal,2010/11,FA Cup,Quarter-finals,6,No,false,wk_s
+m0091,Arsenal,2010/11,League Cup,Runners-up,6,No,false,wk_s
+m0092,Arsenal,2010/11,Champions League,Round of 16,8,No,false,wk_s
+m0093,Arsenal,2011/12,Premier League,3rd,38,No,false,wk_s
+m0094,Arsenal,2011/12,FA Cup,Fifth round,3,No,false,wk_s
+m0095,Arsenal,2011/12,League Cup,Quarter-finals,3,No,false,wk_s
+m0096,Arsenal,2011/12,Champions League,Round of 16,10,No,false,wk_s
+m0097,Arsenal,2012/13,Premier League,4th,38,No,false,wk_s
+m0098,Arsenal,2012/13,FA Cup,Fifth round,4,No,false,wk_s
+m0099,Arsenal,2012/13,League Cup,Quarter-finals,3,No,false,wk_s
+m0100,Arsenal,2012/13,Champions League,Round of 16,8,No,false,wk_s
+m0101,Arsenal,2013/14,Premier League,4th,38,No,false,wk_s
+m0102,Arsenal,2013/14,FA Cup,Winners,6,Yes,false,wk_s
+m0103,Arsenal,2013/14,League Cup,Fourth round,2,No,false,wk_s
+m0104,Arsenal,2013/14,Champions League,Round of 16,10,No,false,wk_s
+m0105,Arsenal,2014/15,Community Shield,Winners,1,Yes,false,wk_s
+m0106,Arsenal,2014/15,Premier League,3rd,38,No,false,wk_s
+m0107,Arsenal,2014/15,FA Cup,Winners,6,Yes,false,wk_s
+m0108,Arsenal,2014/15,League Cup,Third round,1,No,false,wk_s
+m0109,Arsenal,2014/15,Champions League,Round of 16,10,No,false,wk_s
+m0110,Arsenal,2015/16,Community Shield,Winners,1,Yes,false,wk_s
+m0111,Arsenal,2015/16,Premier League,2nd,38,No,false,wk_s
+m0112,Arsenal,2015/16,FA Cup,Quarter-finals,5,No,false,wk_s
+m0113,Arsenal,2015/16,League Cup,Fourth round,2,No,false,wk_s
+m0114,Arsenal,2015/16,Champions League,Round of 16,8,No,false,wk_s
+m0115,Arsenal,2016/17,Premier League,5th,38,No,false,wk_s
+m0116,Arsenal,2016/17,FA Cup,Winners,6,Yes,false,wk_s
+m0117,Arsenal,2016/17,League Cup,Quarter-finals,3,No,false,wk_s
+m0118,Arsenal,2016/17,Champions League,Round of 16,8,No,false,wk_s
+m0119,Arsenal,2017/18,Community Shield,Winners,1,Yes,false,wk_s
+m0120,Arsenal,2017/18,Premier League,6th,38,No,false,wk_s
+m0121,Arsenal,2017/18,FA Cup,Third round,1,No,false,wk_s
+m0122,Arsenal,2017/18,League Cup,Runners-up,6,No,false,wk_s
+m0123,Arsenal,2017/18,Europa League,Semi-finals,14,No,false,wk_s
+m0124,Arsenal,2018/19,Premier League,5th,38,No,false,wk_s
+m0125,Arsenal,2018/19,FA Cup,Fourth round,2,No,false,wk_s
+m0126,Arsenal,2018/19,League Cup,Quarter-finals,3,No,false,wk_s
+m0127,Arsenal,2018/19,Europa League,Runners-up,15,No,false,wk_s
+m0128,Arsenal,2019/20,Premier League,8th,38,No,false,wk_s
+m0129,Arsenal,2019/20,FA Cup,Winners,6,Yes,false,wk_s
+m0130,Arsenal,2019/20,League Cup,Fourth round,2,No,false,wk_s
+m0131,Arsenal,2019/20,Europa League,Round of 32,8,No,false,wk_s
+m0132,Arsenal,2020/21,Community Shield,Winners,1,Yes,false,wk_s
+m0133,Arsenal,2020/21,Premier League,8th,38,No,false,wk_s
+m0134,Arsenal,2020/21,FA Cup,Fourth round,2,No,false,wk_s
+m0135,Arsenal,2020/21,League Cup,Quarter-finals,3,No,false,wk_s
+m0136,Arsenal,2020/21,Europa League,Semi-finals,14,No,false,wk_s
+m0137,Arsenal,2021/22,Premier League,5th,38,No,false,wk_s
+m0138,Arsenal,2021/22,FA Cup,Third round,1,No,false,wk_s
+m0139,Arsenal,2021/22,League Cup,Semi-finals,6,No,false,wk_s
+m0140,Arsenal,2022/23,Premier League,2nd,38,No,false,wk_s
+m0141,Arsenal,2022/23,FA Cup,Fourth round,2,No,false,wk_s
+m0142,Arsenal,2022/23,League Cup,Third round,1,No,false,wk_s
+m0143,Arsenal,2022/23,Europa League,Round of 16,8,No,false,wk_s
+m0144,Arsenal,2023/24,Community Shield,Winners,1,Yes,false,wk_s
+m0145,Arsenal,2023/24,Premier League,2nd,38,No,false,wk_s
+m0146,Arsenal,2023/24,FA Cup,Third round,1,No,false,wk_s
+m0147,Arsenal,2023/24,League Cup,Fourth round,2,No,false,wk_s
+m0148,Arsenal,2023/24,Champions League,Quarter-finals,10,No,false,wk_s
+m0149,Arsenal,2024/25,Premier League,2nd,38,No,false,wk_s
+m0150,Arsenal,2024/25,FA Cup,Third round,1,No,false,wk_s
+m0151,Arsenal,2024/25,League Cup,Semi-finals,5,No,false,wk_s
+m0152,Arsenal,2024/25,Champions League,Semi-finals,14,No,false,wk_s
+m0153,Arsenal,2025/26,Premier League,1st,38,Yes,false,wk_s
+m0154,Arsenal,2025/26,FA Cup,Quarter-finals,4,No,false,wk_s
+m0155,Arsenal,2025/26,League Cup,Runners-up,6,No,false,wk_s
+m0156,Arsenal,2025/26,Champions League,Runners-up,15,No,false,wk_s
+m0157,Arsenal,2026/27,Community Shield,Winners,1,Yes,true,live
+m0158,Arsenal,2026/27,Premier League,2nd after 6 games,6,No,true,live
+m0159,Arsenal,2026/27,League Cup,Into fourth round,1,No,true,live
+m0160,Arsenal,2026/27,Champions League,"League phase, 2 of 8 played",2,No,true,live
+m0161,Chelsea,2009/10,Community Shield,Winners,1,Yes,false,wk_s
+m0162,Chelsea,2009/10,Premier League,1st,38,Yes,false,wk_s
+m0163,Chelsea,2009/10,FA Cup,Winners,6,Yes,false,wk_s
+m0164,Chelsea,2009/10,League Cup,Quarter-finals,3,No,false,wk_s
+m0165,Chelsea,2009/10,Champions League,Round of 16,8,No,false,wk_s
+m0166,Chelsea,2010/11,Community Shield,Runners-up,1,No,false,wk_s
+m0167,Chelsea,2010/11,Premier League,2nd,38,No,false,wk_s
+m0168,Chelsea,2010/11,FA Cup,Fourth round,3,No,false,wk_s
+m0169,Chelsea,2010/11,League Cup,Third round,1,No,false,wk_s
+m0170,Chelsea,2010/11,Champions League,Quarter-finals,10,No,false,wk_s
+m0171,Chelsea,2011/12,Premier League,6th,38,No,false,wk_s
+m0172,Chelsea,2011/12,FA Cup,Winners,7,Yes,false,wk_s
+m0173,Chelsea,2011/12,League Cup,Quarter-finals,3,No,false,wk_s
+m0174,Chelsea,2011/12,Champions League,Winners,13,Yes,false,wk_s
+m0175,Chelsea,2012/13,Community Shield,Runners-up,1,No,false,wk_s
+m0176,Chelsea,2012/13,UEFA Super Cup,Runners-up,1,No,false,wk_s
+m0177,Chelsea,2012/13,Club World Cup,Runners-up,2,No,false,wk_s
+m0178,Chelsea,2012/13,Premier League,3rd,38,No,false,wk_s
+m0179,Chelsea,2012/13,FA Cup,Semi-finals,7,No,false,wk_s
+m0180,Chelsea,2012/13,League Cup,Semi-finals,5,No,false,wk_s
+m0181,Chelsea,2012/13,Champions League,Group stage,6,No,false,wk_s
+m0182,Chelsea,2012/13,Europa League,Winners,9,Yes,false,wk_s
+m0183,Chelsea,2013/14,UEFA Super Cup,Runners-up,1,No,false,wk_s
+m0184,Chelsea,2013/14,Premier League,3rd,38,No,false,wk_s
+m0185,Chelsea,2013/14,FA Cup,Fifth round,3,No,false,wk_s
+m0186,Chelsea,2013/14,League Cup,Quarter-finals,3,No,false,wk_s
+m0187,Chelsea,2013/14,Champions League,Semi-finals,12,No,false,wk_s
+m0188,Chelsea,2014/15,Premier League,1st,38,Yes,false,wk_s
+m0189,Chelsea,2014/15,FA Cup,Fourth round,2,No,false,wk_s
+m0190,Chelsea,2014/15,League Cup,Winners,6,Yes,false,wk_s
+m0191,Chelsea,2014/15,Champions League,Round of 16,8,No,false,wk_s
+m0192,Chelsea,2015/16,Community Shield,Runners-up,1,No,false,wk_s
+m0193,Chelsea,2015/16,Premier League,10th,38,No,false,wk_s
+m0194,Chelsea,2015/16,FA Cup,Quarter-finals,4,No,false,wk_s
+m0195,Chelsea,2015/16,League Cup,Fourth round,2,No,false,wk_s
+m0196,Chelsea,2015/16,Champions League,Round of 16,8,No,false,wk_s
+m0197,Chelsea,2016/17,Premier League,1st,38,Yes,false,wk_s
+m0198,Chelsea,2016/17,FA Cup,Runners-up,6,No,false,wk_s
+m0199,Chelsea,2016/17,League Cup,Fourth round,3,No,false,wk_s
+m0200,Chelsea,2017/18,Community Shield,Runners-up,1,No,false,wk_s
+m0201,Chelsea,2017/18,Premier League,5th,38,No,false,wk_s
+m0202,Chelsea,2017/18,FA Cup,Winners,7,Yes,false,wk_s
+m0203,Chelsea,2017/18,League Cup,Semi-finals,5,No,false,wk_s
+m0204,Chelsea,2017/18,Champions League,Round of 16,8,No,false,wk_s
+m0205,Chelsea,2018/19,Community Shield,Runners-up,1,No,false,wk_s
+m0206,Chelsea,2018/19,Premier League,3rd,38,No,false,wk_s
+m0207,Chelsea,2018/19,FA Cup,Fifth round,3,No,false,wk_s
+m0208,Chelsea,2018/19,League Cup,Runners-up,6,No,false,wk_s
+m0209,Chelsea,2018/19,Europa League,Winners,15,Yes,false,wk_s
+m0210,Chelsea,2019/20,UEFA Super Cup,Runners-up,1,No,false,wk_s
+m0211,Chelsea,2019/20,Premier League,4th,38,No,false,wk_s
+m0212,Chelsea,2019/20,FA Cup,Runners-up,6,No,false,wk_s
+m0213,Chelsea,2019/20,League Cup,Fourth round,2,No,false,wk_s
+m0214,Chelsea,2019/20,Champions League,Round of 16,8,No,false,wk_s
+m0215,Chelsea,2020/21,Premier League,4th,38,No,false,wk_s
+m0216,Chelsea,2020/21,FA Cup,Runners-up,6,No,false,wk_s
+m0217,Chelsea,2020/21,League Cup,Fourth round,2,No,false,wk_s
+m0218,Chelsea,2020/21,Champions League,Winners,13,Yes,false,wk_s
+m0219,Chelsea,2021/22,UEFA Super Cup,Winners,1,Yes,false,wk_s
+m0220,Chelsea,2021/22,Club World Cup,Winners,2,Yes,false,wk_s
+m0221,Chelsea,2021/22,Premier League,3rd,38,No,false,wk_s
+m0222,Chelsea,2021/22,FA Cup,Runners-up,6,No,false,wk_s
+m0223,Chelsea,2021/22,League Cup,Runners-up,6,No,false,wk_s
+m0224,Chelsea,2021/22,Champions League,Quarter-finals,10,No,false,wk_s
+m0225,Chelsea,2022/23,Premier League,12th,38,No,false,wk_s
+m0226,Chelsea,2022/23,FA Cup,Third round,1,No,false,wk_s
+m0227,Chelsea,2022/23,League Cup,Third round,1,No,false,wk_s
+m0228,Chelsea,2022/23,Champions League,Quarter-finals,10,No,false,wk_s
+m0229,Chelsea,2023/24,Premier League,6th,38,No,false,wk_s
+m0230,Chelsea,2023/24,FA Cup,Semi-finals,6,No,false,wk_s
+m0231,Chelsea,2023/24,League Cup,Runners-up,7,No,false,wk_s
+m0232,Chelsea,2024/25,Premier League,4th,38,No,false,wk_s
+m0233,Chelsea,2024/25,FA Cup,Fourth round,2,No,false,wk_s
+m0234,Chelsea,2024/25,League Cup,Fourth round,2,No,false,wk_s
+m0235,Chelsea,2024/25,Conference League,Winners,15,Yes,false,wk_s
+m0236,Chelsea,2024/25,Club World Cup,Winners,7,Yes,false,wk_s
+m0237,Chelsea,2025/26,Premier League,10th,38,No,false,wk_s
+m0238,Chelsea,2025/26,FA Cup,Runners-up,6,No,false,wk_s
+m0239,Chelsea,2025/26,League Cup,Semi-finals,5,No,false,wk_s
+m0240,Chelsea,2025/26,Champions League,Round of 16,10,No,false,wk_s
+m0241,Chelsea,2026/27,Premier League,6th after 6 games,6,No,true,live
+m0242,Chelsea,2026/27,League Cup,Into fourth round,2,No,true,live
+m0243,Liverpool,2009/10,Premier League,7th,38,No,false,wk_s
+m0244,Liverpool,2009/10,FA Cup,Third round,2,No,false,wk_s
+m0245,Liverpool,2009/10,League Cup,Fourth round,2,No,false,wk_s
+m0246,Liverpool,2009/10,Champions League,Group stage,6,No,false,wk_s
+m0247,Liverpool,2009/10,Europa League,Semi-finals,8,No,false,wk_s
+m0248,Liverpool,2010/11,Premier League,6th,38,No,false,wk_s
+m0249,Liverpool,2010/11,FA Cup,Third round,1,No,false,wk_s
+m0250,Liverpool,2010/11,League Cup,Third round,1,No,false,wk_s
+m0251,Liverpool,2010/11,Europa League,Round of 16,14,No,false,wk_s
+m0252,Liverpool,2011/12,Premier League,8th,38,No,false,wk_s
+m0253,Liverpool,2011/12,FA Cup,Runners-up,6,No,false,wk_s
+m0254,Liverpool,2011/12,League Cup,Winners,7,Yes,false,wk_s
+m0255,Liverpool,2012/13,Premier League,7th,38,No,false,wk_s
+m0256,Liverpool,2012/13,FA Cup,Fourth round,2,No,false,wk_s
+m0257,Liverpool,2012/13,League Cup,Fourth round,2,No,false,wk_s
+m0258,Liverpool,2012/13,Europa League,Round of 32,12,No,false,wk_s
+m0259,Liverpool,2013/14,Premier League,2nd,38,No,false,wk_s
+m0260,Liverpool,2013/14,FA Cup,Fifth round,3,No,false,wk_s
+m0261,Liverpool,2013/14,League Cup,Third round,2,No,false,wk_s
+m0262,Liverpool,2014/15,Premier League,6th,38,No,false,wk_s
+m0263,Liverpool,2014/15,FA Cup,Semi-finals,7,No,false,wk_s
+m0264,Liverpool,2014/15,League Cup,Semi-finals,5,No,false,wk_s
+m0265,Liverpool,2014/15,Champions League,Group stage,6,No,false,wk_s
+m0266,Liverpool,2014/15,Europa League,Round of 32,2,No,false,wk_s
+m0267,Liverpool,2015/16,Premier League,8th,38,No,false,wk_s
+m0268,Liverpool,2015/16,FA Cup,Fourth round,4,No,false,wk_s
+m0269,Liverpool,2015/16,League Cup,Runners-up,6,No,false,wk_s
+m0270,Liverpool,2015/16,Europa League,Runners-up,15,No,false,wk_s
+m0271,Liverpool,2016/17,Premier League,4th,38,No,false,wk_s
+m0272,Liverpool,2016/17,FA Cup,Fourth round,3,No,false,wk_s
+m0273,Liverpool,2016/17,League Cup,Semi-finals,6,No,false,wk_s
+m0274,Liverpool,2017/18,Premier League,4th,38,No,false,wk_s
+m0275,Liverpool,2017/18,FA Cup,Fourth round,2,No,false,wk_s
+m0276,Liverpool,2017/18,League Cup,Third round,1,No,false,wk_s
+m0277,Liverpool,2017/18,Champions League,Runners-up,15,No,false,wk_s
+m0278,Liverpool,2018/19,Premier League,2nd,38,No,false,wk_s
+m0279,Liverpool,2018/19,FA Cup,Third round,1,No,false,wk_s
+m0280,Liverpool,2018/19,League Cup,Third round,1,No,false,wk_s
+m0281,Liverpool,2018/19,Champions League,Winners,13,Yes,false,wk_s
+m0282,Liverpool,2019/20,Community Shield,Runners-up,1,No,false,wk_s
+m0283,Liverpool,2019/20,UEFA Super Cup,Winners,1,Yes,false,wk_s
+m0284,Liverpool,2019/20,Club World Cup,Winners,2,Yes,false,wk_s
+m0285,Liverpool,2019/20,Premier League,1st,38,Yes,false,wk_s
+m0286,Liverpool,2019/20,FA Cup,Fifth round,4,No,false,wk_s
+m0287,Liverpool,2019/20,League Cup,Quarter-finals,3,No,false,wk_s
+m0288,Liverpool,2019/20,Champions League,Round of 16,8,No,false,wk_s
+m0289,Liverpool,2020/21,Community Shield,Runners-up,1,No,false,wk_s
+m0290,Liverpool,2020/21,Premier League,3rd,38,No,false,wk_s
+m0291,Liverpool,2020/21,FA Cup,Fourth round,2,No,false,wk_s
+m0292,Liverpool,2020/21,League Cup,Fourth round,2,No,false,wk_s
+m0293,Liverpool,2020/21,Champions League,Quarter-finals,10,No,false,wk_s
+m0294,Liverpool,2021/22,Premier League,2nd,38,No,false,wk_s
+m0295,Liverpool,2021/22,FA Cup,Winners,6,Yes,false,wk_s
+m0296,Liverpool,2021/22,League Cup,Winners,6,Yes,false,wk_s
+m0297,Liverpool,2021/22,Champions League,Runners-up,13,No,false,wk_s
+m0298,Liverpool,2022/23,Community Shield,Winners,1,Yes,false,wk_s
+m0299,Liverpool,2022/23,Premier League,5th,38,No,false,wk_s
+m0300,Liverpool,2022/23,FA Cup,Fourth round,3,No,false,wk_s
+m0301,Liverpool,2022/23,League Cup,Fourth round,2,No,false,wk_s
+m0302,Liverpool,2022/23,Champions League,Round of 16,8,No,false,wk_s
+m0303,Liverpool,2023/24,Premier League,3rd,38,No,false,wk_s
+m0304,Liverpool,2023/24,FA Cup,Quarter-finals,4,No,false,wk_s
+m0305,Liverpool,2023/24,League Cup,Winners,6,Yes,false,wk_s
+m0306,Liverpool,2023/24,Europa League,Quarter-finals,10,No,false,wk_s
+m0307,Liverpool,2024/25,Premier League,1st,38,Yes,false,wk_s
+m0308,Liverpool,2024/25,FA Cup,Fourth round,2,No,false,wk_s
+m0309,Liverpool,2024/25,League Cup,Runners-up,6,No,false,wk_s
+m0310,Liverpool,2024/25,Champions League,Round of 16,10,No,false,wk_s
+m0311,Liverpool,2025/26,Community Shield,Runners-up,1,No,false,wk_s
+m0312,Liverpool,2025/26,Premier League,5th,38,No,false,wk_s
+m0313,Liverpool,2025/26,FA Cup,Quarter-finals,4,No,false,wk_s
+m0314,Liverpool,2025/26,League Cup,Fourth round,2,No,false,wk_s
+m0315,Liverpool,2025/26,Champions League,Quarter-finals,12,No,false,wk_s
+m0316,Liverpool,2026/27,Premier League,9th after 6 games,6,No,true,live
+m0317,Liverpool,2026/27,League Cup,Into fourth round,1,No,true,live
+m0318,Liverpool,2026/27,Champions League,"League phase, 2 of 8 played",2,No,true,live
+m0319,Man United,2009/10,Community Shield,Runners-up,1,No,false,wk_s
+m0320,Man United,2009/10,Premier League,2nd,38,No,false,wk_s
+m0321,Man United,2009/10,FA Cup,Third round,1,No,false,wk_s
+m0322,Man United,2009/10,League Cup,Winners,6,Yes,false,wk_s
+m0323,Man United,2009/10,Champions League,Quarter-finals,10,No,false,wk_s
+m0324,Man United,2010/11,Community Shield,Winners,1,Yes,false,wk_s
+m0325,Man United,2010/11,Premier League,1st,38,Yes,false,wk_s
+m0326,Man United,2010/11,FA Cup,Semi-finals,5,No,false,wk_s
+m0327,Man United,2010/11,League Cup,Quarter-finals,3,No,false,wk_s
+m0328,Man United,2010/11,Champions League,Runners-up,13,No,false,wk_s
+m0329,Man United,2011/12,Community Shield,Winners,1,Yes,false,wk_s
+m0330,Man United,2011/12,Premier League,2nd,38,No,false,wk_s
+m0331,Man United,2011/12,FA Cup,Fourth round,2,No,false,wk_s
+m0332,Man United,2011/12,League Cup,Quarter-finals,3,No,false,wk_s
+m0333,Man United,2011/12,Champions League,Group stage,6,No,false,wk_s
+m0334,Man United,2011/12,Europa League,Round of 16,4,No,false,wk_s
+m0335,Man United,2012/13,Premier League,1st,38,Yes,false,wk_s
+m0336,Man United,2012/13,FA Cup,Quarter-finals,6,No,false,wk_s
+m0337,Man United,2012/13,League Cup,Fourth round,2,No,false,wk_s
+m0338,Man United,2012/13,Champions League,Round of 16,8,No,false,wk_s
+m0339,Man United,2013/14,Community Shield,Winners,1,Yes,false,wk_s
+m0340,Man United,2013/14,Premier League,7th,38,No,false,wk_s
+m0341,Man United,2013/14,FA Cup,Third round,1,No,false,wk_s
+m0342,Man United,2013/14,League Cup,Semi-finals,5,No,false,wk_s
+m0343,Man United,2013/14,Champions League,Quarter-finals,10,No,false,wk_s
+m0344,Man United,2014/15,Premier League,4th,38,No,false,wk_s
+m0345,Man United,2014/15,FA Cup,Quarter-finals,5,No,false,wk_s
+m0346,Man United,2014/15,League Cup,Second round,1,No,false,wk_s
+m0347,Man United,2015/16,Premier League,5th,38,No,false,wk_s
+m0348,Man United,2015/16,FA Cup,Winners,7,Yes,false,wk_s
+m0349,Man United,2015/16,League Cup,Fourth round,2,No,false,wk_s
+m0350,Man United,2015/16,Champions League,Group stage,8,No,false,wk_s
+m0351,Man United,2015/16,Europa League,Round of 16,4,No,false,wk_s
+m0352,Man United,2016/17,Community Shield,Winners,1,Yes,false,wk_s
+m0353,Man United,2016/17,Premier League,6th,38,No,false,wk_s
+m0354,Man United,2016/17,FA Cup,Quarter-finals,4,No,false,wk_s
+m0355,Man United,2016/17,League Cup,Winners,6,Yes,false,wk_s
+m0356,Man United,2016/17,Europa League,Winners,15,Yes,false,wk_s
+m0357,Man United,2017/18,UEFA Super Cup,Runners-up,1,No,false,wk_s
+m0358,Man United,2017/18,Premier League,2nd,38,No,false,wk_s
+m0359,Man United,2017/18,FA Cup,Runners-up,6,No,false,wk_s
+m0360,Man United,2017/18,League Cup,Quarter-finals,3,No,false,wk_s
+m0361,Man United,2017/18,Champions League,Round of 16,8,No,false,wk_s
+m0362,Man United,2018/19,Premier League,6th,38,No,false,wk_s
+m0363,Man United,2018/19,FA Cup,Quarter-finals,4,No,false,wk_s
+m0364,Man United,2018/19,League Cup,Third round,1,No,false,wk_s
+m0365,Man United,2018/19,Champions League,Quarter-finals,10,No,false,wk_s
+m0366,Man United,2019/20,Premier League,3rd,38,No,false,wk_s
+m0367,Man United,2019/20,FA Cup,Semi-finals,6,No,false,wk_s
+m0368,Man United,2019/20,League Cup,Semi-finals,5,No,false,wk_s
+m0369,Man United,2019/20,Europa League,Semi-finals,12,No,false,wk_s
+m0370,Man United,2020/21,Premier League,2nd,38,No,false,wk_s
+m0371,Man United,2020/21,FA Cup,Quarter-finals,4,No,false,wk_s
+m0372,Man United,2020/21,League Cup,Semi-finals,4,No,false,wk_s
+m0373,Man United,2020/21,Champions League,Group stage,6,No,false,wk_s
+m0374,Man United,2020/21,Europa League,Runners-up,9,No,false,wk_s
+m0375,Man United,2021/22,Premier League,6th,38,No,false,wk_s
+m0376,Man United,2021/22,FA Cup,Fourth round,2,No,false,wk_s
+m0377,Man United,2021/22,League Cup,Third round,1,No,false,wk_s
+m0378,Man United,2021/22,Champions League,Round of 16,8,No,false,wk_s
+m0379,Man United,2022/23,Premier League,3rd,38,No,false,wk_s
+m0380,Man United,2022/23,FA Cup,Runners-up,6,No,false,wk_s
+m0381,Man United,2022/23,League Cup,Winners,6,Yes,false,wk_s
+m0382,Man United,2022/23,Europa League,Quarter-finals,12,No,false,wk_s
+m0383,Man United,2023/24,Premier League,8th,38,No,false,wk_s
+m0384,Man United,2023/24,FA Cup,Winners,6,Yes,false,wk_s
+m0385,Man United,2023/24,League Cup,Fourth round,2,No,false,wk_s
+m0386,Man United,2023/24,Champions League,Group stage,6,No,false,wk_s
+m0387,Man United,2024/25,Community Shield,Runners-up,1,No,false,wk_s
+m0388,Man United,2024/25,Premier League,15th,38,No,false,wk_s
+m0389,Man United,2024/25,FA Cup,Fifth round,3,No,false,wk_s
+m0390,Man United,2024/25,League Cup,Quarter-finals,3,No,false,wk_s
+m0391,Man United,2024/25,Europa League,Runners-up,15,No,false,wk_s
+m0392,Man United,2025/26,Premier League,3rd,38,No,false,wk_s
+m0393,Man United,2025/26,FA Cup,Third round,1,No,false,wk_s
+m0394,Man United,2025/26,League Cup,Second round,1,No,false,wk_s
+m0395,Man United,2026/27,Premier League,13th after 6 games,6,No,true,live
+m0396,Man United,2026/27,League Cup,Third round,1,No,true,live
+m0397,Man United,2026/27,Champions League,"League phase, 2 of 8 played",2,No,true,live
+m0398,Tottenham,2009/10,Premier League,4th,38,No,false,wk_s
+m0399,Tottenham,2009/10,FA Cup,Semi-finals,8,No,false,wk_s
+m0400,Tottenham,2009/10,League Cup,Quarter-finals,4,No,false,wk_s
+m0401,Tottenham,2010/11,Premier League,5th,38,No,false,wk_s
+m0402,Tottenham,2010/11,FA Cup,Fourth round,2,No,false,wk_s
+m0403,Tottenham,2010/11,League Cup,Third round,1,No,false,wk_s
+m0404,Tottenham,2010/11,Champions League,Quarter-finals,12,No,false,wk_s
+m0405,Tottenham,2011/12,Premier League,4th,38,No,false,wk_s
+m0406,Tottenham,2011/12,FA Cup,Semi-finals,6,No,false,wk_s
+m0407,Tottenham,2011/12,League Cup,Third round,1,No,false,wk_s
+m0408,Tottenham,2011/12,Europa League,Group stage,8,No,false,wk_s
+m0409,Tottenham,2012/13,Premier League,5th,38,No,false,wk_s
+m0410,Tottenham,2012/13,FA Cup,Fourth round,2,No,false,wk_s
+m0411,Tottenham,2012/13,League Cup,Fourth round,2,No,false,wk_s
+m0412,Tottenham,2012/13,Europa League,Quarter-finals,12,No,false,wk_s
+m0413,Tottenham,2013/14,Premier League,6th,38,No,false,wk_s
+m0414,Tottenham,2013/14,FA Cup,Third round,1,No,false,wk_s
+m0415,Tottenham,2013/14,League Cup,Quarter-finals,3,No,false,wk_s
+m0416,Tottenham,2013/14,Europa League,Round of 16,12,No,false,wk_s
+m0417,Tottenham,2014/15,Premier League,5th,38,No,false,wk_s
+m0418,Tottenham,2014/15,FA Cup,Fourth round,3,No,false,wk_s
+m0419,Tottenham,2014/15,League Cup,Runners-up,6,No,false,wk_s
+m0420,Tottenham,2014/15,Europa League,Round of 32,10,No,false,wk_s
+m0421,Tottenham,2015/16,Premier League,3rd,38,No,false,wk_s
+m0422,Tottenham,2015/16,FA Cup,Fifth round,4,No,false,wk_s
+m0423,Tottenham,2015/16,League Cup,Third round,1,No,false,wk_s
+m0424,Tottenham,2015/16,Europa League,Round of 16,10,No,false,wk_s
+m0425,Tottenham,2016/17,Premier League,2nd,38,No,false,wk_s
+m0426,Tottenham,2016/17,FA Cup,Semi-finals,5,No,false,wk_s
+m0427,Tottenham,2016/17,League Cup,Fourth round,2,No,false,wk_s
+m0428,Tottenham,2016/17,Champions League,Group stage,6,No,false,wk_s
+m0429,Tottenham,2016/17,Europa League,Round of 32,2,No,false,wk_s
+m0430,Tottenham,2017/18,Premier League,3rd,38,No,false,wk_s
+m0431,Tottenham,2017/18,FA Cup,Semi-finals,7,No,false,wk_s
+m0432,Tottenham,2017/18,League Cup,Fourth round,2,No,false,wk_s
+m0433,Tottenham,2017/18,Champions League,Round of 16,8,No,false,wk_s
+m0434,Tottenham,2018/19,Premier League,4th,38,No,false,wk_s
+m0435,Tottenham,2018/19,FA Cup,Fourth round,2,No,false,wk_s
+m0436,Tottenham,2018/19,League Cup,Semi-finals,5,No,false,wk_s
+m0437,Tottenham,2018/19,Champions League,Runners-up,13,No,false,wk_s
+m0438,Tottenham,2019/20,Premier League,6th,38,No,false,wk_s
+m0439,Tottenham,2019/20,FA Cup,Fifth round,5,No,false,wk_s
+m0440,Tottenham,2019/20,League Cup,Third round,1,No,false,wk_s
+m0441,Tottenham,2019/20,Champions League,Round of 16,8,No,false,wk_s
+m0442,Tottenham,2020/21,Premier League,7th,38,No,false,wk_s
+m0443,Tottenham,2020/21,FA Cup,Fifth round,3,No,false,wk_s
+m0444,Tottenham,2020/21,League Cup,Runners-up,4,No,false,wk_s
+m0445,Tottenham,2020/21,Europa League,Round of 16,13,No,false,wk_s
+m0446,Tottenham,2021/22,Premier League,4th,38,No,false,wk_s
+m0447,Tottenham,2021/22,FA Cup,Fifth round,3,No,false,wk_s
+m0448,Tottenham,2021/22,League Cup,Semi-finals,5,No,false,wk_s
+m0449,Tottenham,2021/22,Conference League,Group stage,7,No,false,wk_s
+m0450,Tottenham,2022/23,Premier League,8th,38,No,false,wk_s
+m0451,Tottenham,2022/23,FA Cup,Fifth round,3,No,false,wk_s
+m0452,Tottenham,2022/23,League Cup,Third round,1,No,false,wk_s
+m0453,Tottenham,2022/23,Champions League,Round of 16,8,No,false,wk_s
+m0454,Tottenham,2023/24,Premier League,5th,38,No,false,wk_s
+m0455,Tottenham,2023/24,FA Cup,Fourth round,2,No,false,wk_s
+m0456,Tottenham,2023/24,League Cup,Second round,1,No,false,wk_s
+m0457,Tottenham,2024/25,Premier League,17th,38,No,false,wk_s
+m0458,Tottenham,2024/25,FA Cup,Fourth round,2,No,false,wk_s
+m0459,Tottenham,2024/25,League Cup,Semi-finals,5,No,false,wk_s
+m0460,Tottenham,2024/25,Europa League,Winners,15,Yes,false,wk_s
+m0461,Tottenham,2025/26,UEFA Super Cup,Runners-up,1,No,false,wk_s
+m0462,Tottenham,2025/26,Premier League,17th,38,No,false,wk_s
+m0463,Tottenham,2025/26,FA Cup,Third round,1,No,false,wk_s
+m0464,Tottenham,2025/26,League Cup,Fourth round,2,No,false,wk_s
+m0465,Tottenham,2025/26,Champions League,Round of 16,10,No,false,wk_s
+m0466,Tottenham,2026/27,Premier League,19th after 6 games,6,No,true,live
+m0467,Tottenham,2026/27,League Cup,Third round,2,No,true,live

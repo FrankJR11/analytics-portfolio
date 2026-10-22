@@ -1,0 +1,52 @@
+id,club,manager,from,to,current,role
+m-man-city-mark-hughes-2008,Man City,Mark Hughes,2008-06,2009-12,false,Permanent
+m-man-city-roberto-mancini-2009,Man City,Roberto Mancini,2009-12,2013-05,false,Permanent
+m-man-city-manuel-pellegrini-2013,Man City,Manuel Pellegrini,2013-06,2016-06,false,Permanent
+m-man-city-pep-guardiola-2016,Man City,Pep Guardiola,2016-07,2026-05,false,Permanent
+m-man-city-enzo-maresca-2026,Man City,Enzo Maresca,2026-06,,true,Permanent
+m-arsenal-arsène-wenger-1996,Arsenal,Arsène Wenger,1996-10,2018-05,false,Permanent
+m-arsenal-unai-emery-2018,Arsenal,Unai Emery,2018-05,2019-11,false,Permanent
+m-arsenal-mikel-arteta-2019,Arsenal,Mikel Arteta,2019-12,,true,Permanent
+m-chelsea-carlo-ancelotti-2009,Chelsea,Carlo Ancelotti,2009-07,2011-05,false,Permanent
+m-chelsea-andré-villas-boas-2011,Chelsea,André Villas-Boas,2011-06,2012-03,false,Permanent
+m-chelsea-roberto-di-matteo-2012,Chelsea,Roberto Di Matteo,2012-03,2012-11,false,"Interim, then permanent"
+m-chelsea-rafael-benítez-2012,Chelsea,Rafael Benítez,2012-11,2013-05,false,Interim
+m-chelsea-josé-mourinho-2013,Chelsea,José Mourinho,2013-06,2015-12,false,Permanent
+m-chelsea-guus-hiddink-2015,Chelsea,Guus Hiddink,2015-12,2016-07,false,Interim
+m-chelsea-antonio-conte-2016,Chelsea,Antonio Conte,2016-07,2018-07,false,Permanent
+m-chelsea-maurizio-sarri-2018,Chelsea,Maurizio Sarri,2018-07,2019-06,false,Permanent
+m-chelsea-frank-lampard-2019,Chelsea,Frank Lampard,2019-07,2021-01,false,Permanent
+m-chelsea-thomas-tuchel-2021,Chelsea,Thomas Tuchel,2021-01,2022-09,false,Permanent
+m-chelsea-graham-potter-2022,Chelsea,Graham Potter,2022-09,2023-04,false,Permanent
+m-chelsea-frank-lampard-2023,Chelsea,Frank Lampard,2023-04,2023-06,false,Interim
+m-chelsea-mauricio-pochettino-2023,Chelsea,Mauricio Pochettino,2023-07,2024-05,false,Permanent
+m-chelsea-enzo-maresca-2024,Chelsea,Enzo Maresca,2024-07,2026-01,false,Permanent
+m-chelsea-liam-rosenior-2026,Chelsea,Liam Rosenior,2026-01,2026-04,false,Permanent
+m-chelsea-xabi-alonso-2026,Chelsea,Xabi Alonso,2026-07,,true,Permanent
+m-liverpool-rafael-benítez-2004,Liverpool,Rafael Benítez,2004-06,2010-06,false,Permanent
+m-liverpool-roy-hodgson-2010,Liverpool,Roy Hodgson,2010-07,2011-01,false,Permanent
+m-liverpool-kenny-dalglish-2011,Liverpool,Kenny Dalglish,2011-01,2012-05,false,Permanent
+m-liverpool-brendan-rodgers-2012,Liverpool,Brendan Rodgers,2012-06,2015-10,false,Permanent
+m-liverpool-jürgen-klopp-2015,Liverpool,Jürgen Klopp,2015-10,2024-05,false,Permanent
+m-liverpool-arne-slot-2024,Liverpool,Arne Slot,2024-06,2026-05,false,Permanent
+m-liverpool-andoni-iraola-2026,Liverpool,Andoni Iraola,2026-06,,true,Permanent
+m-man-united-alex-ferguson-1986,Man United,Alex Ferguson,1986-11,2013-05,false,Permanent
+m-man-united-david-moyes-2013,Man United,David Moyes,2013-07,2014-04,false,Permanent
+m-man-united-louis-van-gaal-2014,Man United,Louis van Gaal,2014-07,2016-05,false,Permanent
+m-man-united-josé-mourinho-2016,Man United,José Mourinho,2016-05,2018-12,false,Permanent
+m-man-united-ole-gunnar-solskjær-2018,Man United,Ole Gunnar Solskjær,2018-12,2021-11,false,"Interim, then permanent"
+m-man-united-ralf-rangnick-2021,Man United,Ralf Rangnick,2021-12,2022-05,false,Interim
+m-man-united-erik-ten-hag-2022,Man United,Erik ten Hag,2022-05,2024-10,false,Permanent
+m-man-united-ruben-amorim-2024,Man United,Ruben Amorim,2024-11,2026-01,false,Permanent
+m-man-united-michael-carrick-2026,Man United,Michael Carrick,2026-01,,true,"Interim, then permanent"
+m-tottenham-harry-redknapp-2008,Tottenham,Harry Redknapp,2008-10,2012-06,false,Permanent
+m-tottenham-andré-villas-boas-2012,Tottenham,André Villas-Boas,2012-07,2013-12,false,Permanent
+m-tottenham-tim-sherwood-2013,Tottenham,Tim Sherwood,2013-12,2014-05,false,Permanent
+m-tottenham-mauricio-pochettino-2014,Tottenham,Mauricio Pochettino,2014-05,2019-11,false,Permanent
+m-tottenham-josé-mourinho-2019,Tottenham,José Mourinho,2019-11,2021-04,false,Permanent
+m-tottenham-nuno-espírito-santo-2021,Tottenham,Nuno Espírito Santo,2021-06,2021-11,false,Permanent
+m-tottenham-antonio-conte-2021,Tottenham,Antonio Conte,2021-11,2023-03,false,Permanent
+m-tottenham-ange-postecoglou-2023,Tottenham,Ange Postecoglou,2023-06,2025-06,false,Permanent
+m-tottenham-thomas-frank-2025,Tottenham,Thomas Frank,2025-06,2026-02,false,Permanent
+m-tottenham-igor-tudor-2026,Tottenham,Igor Tudor,2026-02,2026-03,false,Interim
+m-tottenham-roberto-de-zerbi-2026,Tottenham,Roberto De Zerbi,2026-03,,true,Permanent
