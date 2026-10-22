@@ -17,8 +17,8 @@ the numbers can answer:
 2. **Selling.** How much of that spending did selling players pay back? Which clubs make a
    real profit from trading players, and where does that profit come from?
 
-The dashboard has four tabs: transfer spend, seasons (trophies, games played, revenue,
-league finishes), wages and managers' pay, and sales and profit.
+The dashboard has four tabs: transfer spend, sales and profit, seasons (trophies, games
+played, revenue, league finishes), and wages and managers' pay.
 
 ## What the data says
 
